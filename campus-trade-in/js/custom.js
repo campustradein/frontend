@@ -130,3 +130,12 @@
     new WOW().init();
             
 
+// 10. vimeo video player control 
+
+  $('#player1Close').on('click', function(){
+    $('#player1').attr('src','');
+  });
+      
+  $('.modalSeeVideoButton').on('click', function(){
+    $('#player1').attr('src','http://player.vimeo.com/video/27855315?api=1&player_id=player1&autoplay=1');
+  });
