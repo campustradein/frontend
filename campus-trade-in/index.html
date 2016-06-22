@@ -130,7 +130,7 @@
 						<input type="text" class="form-control" id="exampleInputName2" placeholder="Enter ISBN, Name or Author">
 						<span class="fa fa-search errspan hidden-lg hidden-md"></span>
 					</div>
-					<input type="submit" class="SearchButton" value="search">
+					<input type="submit" class="SearchButton hidden-xs hidden-sm" value="search">
 				</form>
 				<button data-toggle="modal" data-target="#myModalVideo" class="modalSeeVideoButton"> 
 					<span><i class="fa fa-play" aria-hidden="true"></i></span> &nbsp;
@@ -142,6 +142,9 @@
 
 		<!-- Modal -->
 		<div class="modal fade" id="myModalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="ButtonVideoClose">
+	  			<h4 data-dismiss="modal">X</h4>
+	  		</div>
 			<div class="container">
 				<div class="row">
 					<div class="videoVimeo">
