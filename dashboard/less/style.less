@@ -1,0 +1,137 @@
+
+/* ============================== 
+	
+	Project Name : Campus Trade In
+	Author 		 : Campus Trade In
+	Author URI   : https://www.campustradein.com/
+	Project Last Updated : 13/06/2016
+	
+	CSS Details  : 
+
+	1. Default Variables 
+	2. navigation 
+	3. header section
+	4. login/signup form modal
+
+   ============================== */
+
+/* 	Default Variables  */ 
+
+	@defaultThemeColor: #2780E3;
+	@fontFamily:'Lato', sans-serif;
+
+/*  Default Mixins  */	
+
+	.transitions{
+		transition:all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+		-o-transition:all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+	}
+
+
+/*	Default Settings */
+	
+	body{
+		font-family: 'Lato', sans-serif;
+	}
+	html, body {
+	    height:100%;
+	}
+	a, a:active, a:focus {
+		outline: none;
+	}
+	
+
+/*  navbar Main top  */
+
+	.navbar-default{
+		height:60px;
+		width:100%;
+		background-color:@defaultThemeColor;
+		color:#FFF;
+		border-radius:0px;
+		margin-bottom:0px;
+		border:none;
+		.navbar-brand{
+			color:#fff;
+			font-size:25px;
+			color:#fff;
+			&:hover{
+				color:#fff!important;
+			}
+		}
+		.navbar-nav > li > a {
+			background-color:transparent;
+		    color: #fff;
+	        padding-top: 17px;
+		}
+	    .navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
+	    	color:#fff;
+		}
+		.navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus{
+			background-color:transparent!important;
+			color:#fff;
+		}
+		.navbar-right {
+		    float: right !important;
+		    margin-right: 0px;
+		}
+	}
+	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+	    margin-left: 7px;
+	}
+
+/* aside menu */
+	
+	.asideMenu{
+		height:100%;
+		width:240px;
+		background-color:#222d32;
+		.user{
+			height:100px;
+			width:100%;
+			.image{
+				height:60px;
+				width:60px;
+				border-radius:100px;
+				float:left;
+				margin-top:20px;
+				margin-left:10px;
+				img{
+					height:60px;
+					width:60px;
+					border-radius:100px;
+				}
+			}
+			.contentInneruser{
+				float:left;
+				height:60px;
+			    width: 157px;
+			    border: 1px solid #fff;
+			    margin-top: 20px;
+			}
+		}
+	}
+
+/* ====================================================
+
+		Media Quries for mobile and tablet devices
+
+   ==================================================== */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+	
+}
+
+@media screen and (min-width: 290px) and (max-width: 480px) {
+
+}
