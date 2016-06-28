@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Campus Trade In | Search Books Online | Top Ranked Website of the Year</title>
+		<title>campustradein college marketplace</title>
 		<link rel="icon" href="assets/ico/ico.png" type="image/png" sizes="16x16">
 		<!-- meta tags/keywords for search engines -->
 		<meta charset="UTF-8">
-		<meta name="description" content="Search Books Online">
-		<meta name="keywords" content="books,online books,top rated online books website">
-		<meta name="author" content="Campus Trade In">
+		<meta name="description" content="college online marketpalce">
+		<meta name="keywords" content="books,college books,top rated college textbook marketplace">
+		<meta name="author" content="campustradein">
 		<!-- style sheets -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/animate.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+		<link rel="stylesheet" type="text/css" href="css/formValidation.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" href="css/owl.carousel.css">
-		<link rel="stylesheet" href="css/owl.theme.css">
+		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+		<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+		<link rel="stylesheet" type="text/css" href="css/signup.css">
 		<!-- google fonts  -->
-		<link href='https://fonts.googleapis.com/css?family=Lobster+Two:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<!-- navigation section -->	
+		<!-- navigation section -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,16 +37,29 @@
 		      <a class="navbar-brand" href="#">campustradein</a>
 		    </div>
 
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#" data-toggle="modal" data-target="#myModal" id="registerUser">Register</a></li>
-		        <li><a href="#" data-toggle="modal" data-target="#myModal" id="loginUser">Login</a></li>
-		      </ul>
-		    </div>
-		  </div>
-		</nav>	
-		<!-- login/sign up form modal -->
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" data-toggle="modal" data-target="#myModal" id="loginUser">Login</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal" id="registerUser">Signup</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-user" aria-hidden="true"></i> Welcome user
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><i class="fa fa-plus" aria-hidden="true"></i> List a book</a></li>
+							<li><a href="#"><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</a></li>
+							<li><a href="#"><i class="fa fa-inbox" aria-hidden="true"></i> Inbox</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- login/sign up form modal -->
 		<!-- Modal -->
 		<div class="modal fade modalCustom" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		  <div class="container">
@@ -57,61 +72,74 @@
 		  		<ul role="tablist" id="activator">
 		  			<li role="presentation" class="active itemActive">
 		  				<a href="#login" aria-controls="login" role="tab" data-toggle="tab" id="targetLogInUser">
-		  					LOG IN
+		  					Login
 		  				</a>
 		  			</li>
-		  			<li role="presentation">
+		  			<!-- <li role="presentation">
 		  				<a href="#signup" aria-controls="signup" role="tab" data-toggle="tab" id="targetRegisterUser">
-		  					SIGN UP
+		  					Signup
 		  				</a>
-		  			</li>
+		  			</li> -->
 		  		</ul>
 		  		<div class="col-lg-6 itemModelForms tab-content">
-		  			<img src="assets/ico/tooltip.png" id="tooltip">
+		  			<!-- <img src="assets/ico/tooltip.png" id="tooltip"> -->
 		  			<!-- login form -->
 				    <div role="tabpanel" class="tab-pane active itemLoginForm" id="login">
-				    	<form id="signinForm"> 
-				    		<button> 
+				    	<form id="loginForm">
+				    		<button>
 					    		<span>
 					    			<i class="fa fa-facebook-official" aria-hidden="true"></i>
 					    		</span>
-					    		Log in with Facebook 
+					    		Login with Facebook
 					    	</button>
-					    	<p>Or</p>
-					    	<input type="text" class="form-control" placeholder="Username" id="username" name="username">
+					    	<p>- Or -</p>
+					    	<input type="text" class="form-control" placeholder="Username or Email" id="usernameOrEmail" name="username">
 					    	<input type="password" class="form-control" placeholder="Password" id="password" name="password">
-					    	<button type="submit" class="formButton"> 
-					    		login
-					    	</button>
+					    	<button type="submit" class="formButton">Login</button>
 				    	</form>
 				    </div>
 				    <!-- signup form -->
-				    <div role="tabpanel" class="tab-pane itemSignUpForm" id="signup">
-				    	<form id="signupForm">
-				    		<button> 
+
+				    <!-- <div role="tabpanel" class="tab-pane itemSignUpForm" id="signup"> -->
+				    <!-- 	<form id="signupForm" class="form-horizontal"role="form">
+				    		<button>
 					    		<span>
 					    			<i class="fa fa-facebook-official" aria-hidden="true"></i>
 					    		</span>
-					    		Log in with Facebook 
+					    		Signup with Facebook
 					    	</button>
-					    	<p>Or</p>
-					    	<input type="text" class="form-control" placeholder="Username" id="emailSignUp">
-					    	<input type="Email" class="form-control" placeholder="Email" id="passwordSignUp">
-					    	<input type="password" class="form-control" placeholder="Password" id="passwordRepeatSignUp">
-					    	<select class="form-control">
-					    		<option>Witchia State University</option>
-					    		<option>Kansas State University</option>
-					    		<option>Butler Community College</option>
-					    	</select>
-					    	<button type="submit" class="formButton"> 
-					    		Sign Up
-					    	</button>
-					    	<p>By signing up to create an account I accept campustradein Terms of Use and Privacy Policy.</p>
-				    	</form>
-				    </div>
+					    	<p>- Or -</p>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Username" id="usernameSignup" name="usernameSignup">
+							</div>
+
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Email" id="emailSignup" name="emailSignup">
+							</div>
+
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Password" id="passwordSignup" name="passwordSignup">
+							</div>
+
+							<div class="form-group">
+								<select class="form-control" readonly>
+									<option>Wichita State University</option>
+									<option>Kansas State University</option>
+									<option>Butler Community College</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<button type="submit" class="formButton">Signup</button>
+							</div>
+
+					    	<p>By signing up to create an account I accept campustradein <a href="#">Terms of Use</a> and
+								<a href="#">Privacy Policy</a></p>
+				    	</form> -->
+				    <!-- </div> -->
 		  		</div>
 		  	</div>
-		  </div>	
+		  </div>
 		</div>
 		<div class="clearfix"></div>
 
@@ -119,7 +147,7 @@
 		<a href="#home" class="scroll ArrowUp">
 			<i class="fa fa-chevron-up"></i>
 		</a>
-		
+
 		<!-- header/default slider section -->
 		<section class="header" id="home">
 			<div class="overlayHeader">
@@ -127,12 +155,12 @@
 				<h4>The best way to buy and sell your textbooks on campus</h4>
 				<form class="form-inline">
 					<div class="form-group">
-						<input type="text" class="form-control" id="exampleInputName2" placeholder="Enter ISBN, Name or Author">
+						<input type="text" class="form-control" id="exampleInputName2" placeholder="Enter book title or ISBN">
 						<span class="fa fa-search errspan hidden-lg hidden-md"></span>
 					</div>
 					<input type="submit" class="SearchButton hidden-xs hidden-sm" value="search">
 				</form>
-				<button data-toggle="modal" data-target="#myModalVideo" class="modalSeeVideoButton"> 
+				<button data-toggle="modal" data-target="#myModalVideo" class="modalSeeVideoButton">
 					<span><i class="fa fa-play" aria-hidden="true"></i></span> &nbsp;
 					See how it works
 				</button>
@@ -160,8 +188,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h1 class="wow fadeIn">Schedule your hours, and you'll spend no time tracking them</h1>
-						<p class="wow fadeIn">You're already planning – whether it's weekly, daily, or even just a few hours ahead. Move your schedule<br/> to Timely, and you will be logging hours simultaneously.</p>
+						<h1 class="wow fadeIn">Buy and Sell Textbooks, Fast and Easy</h1>
+						<p class="wow fadeIn">
+							That Economics textbook you've been stressing over? It's just one click away!<br/>
+							There are 100s of textbooks for students to choose from and the best part? It's easy and convenient!
+						</p>
 						<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=600%C3%97170&w=600&h=170" class="wow fadeIn img-responsive">
 					</div>
 				</div>
@@ -173,8 +204,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h1 class="wow fadeIn">The past, the future. You'll have control of both</h1>
-						<p class="wow fadeIn">Who did what – when? Or who's doing what – when? Either way, you'll know the answer. Helps you plan for <br/> new projects, delegate work to employees and see who's got too much on their plate.</p>
+						<h1 class="wow fadeIn">Get more money for your textbooks</h1>
+						<p class="wow fadeIn">
+							Students can make up to 80% back for textbooks compared to bookstore re-sale prices
+						</p>
 						<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=600%C3%97170&w=600&h=170" class="wow fadeIn img-responsive">
 					</div>
 				</div>
@@ -186,8 +219,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h1 class="wow fadeIn">Integrates with your existing calendar</h1>
-						<p class="wow fadeIn">Log hours directly from your favorite calendar! Timely integrates with all major calendars, which means any event<br/> or meeting you add there will be auto-imported into Timely as estimated entries.</p>
+						<h1 class="wow fadeIn">One community tailored to your needs</h1>
+						<p class="wow fadeIn">
+							Dedicated to students in the Wichita State University community. Your most frequently used books are here
+							so you will never run out of options
+						</p>
 						<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=600%C3%97170&w=600&h=170" class="wow fadeIn img-responsive">
 					</div>
 				</div>
@@ -273,16 +309,57 @@
 		<div class="clearfix"></div> -->
 		<!-- footer section -->
 		<footer>
-			<p>&copy; Copyrights 2016</p>
+			<p>&copy; Copyright 2016 <br />
+				built with <a target="_blank" href="http://www.getbootstrap.com">twitter bootstrap</a> and
+				<a target="_blank" href="http://www.fontawesome.io">fontawesome</a>
+			</p>
 		</footer>
+
+		<div class="modal fade" role="dialog" id="signupSuccess">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-header bg-primary">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4>Success!</h4>
+					</div>
+					<div class="modal-body">
+						<p>Thanks for joining campustradein</p>
+						<p>
+							An <em>email</em> has been sent to <em>youremail@email.com</em>. Click on your email provider to go straight
+							to your inbox
+						</p>
+						<a class="btn btn-primary btn-social btn-google" href="#">
+							<span class="fa fa-google"></span> Gmail
+						</a>
+						<a class="btn btn-primary btn-social btn-yahoo" href="#">
+							<span class="fa fa-yahoo"></span> Yahoo
+						</a>
+						<a class="btn btn-primary btn-social btn-microsoft" href="#">
+							<span class="fa fa-windows"></span> Outlook
+						</a>
+					</div><!-- modal body -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div><!-- modal-dialog-->
+		</div>
 
 		<!-- javascript Libraries and custom files -->
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js"></script>
+		<script src="js/formValidation.min.js"></script>
+		<script src="js/formValidation-bootstrap.min.js"></script>
 		<script src="js/morphext.js"></script>
 		<script src="js/backstretch.min.js"></script>
 		<script src="js/wow.js"></script>
 		<script src="js/owl.carousel.js"></script>
+
 		<script src="js/custom.js"></script>
+		<script type="text/javascript">
+			$(window).load(function(){
+				$('#signupSuccess').modal('show');
+			})
+		</script>
 	</body>
 </html>
