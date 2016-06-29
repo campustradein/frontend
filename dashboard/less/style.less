@@ -90,6 +90,7 @@
 		background-color:#222d32;
 		padding-left:10px;
 		padding-right:10px;
+		position:absolute;
 		.user{
 			height:100px;
 			width:100%;
@@ -147,12 +148,52 @@
 					}
 				}
 				i{
-				    padding-left: 136px;
-				    color:#b8c7ce;
-				    &:hover{
-				    	color:#fff;
-				    	cursor:pointer;
-				    }
+			     	color: #b8c7ce;
+				    float: right;
+				    padding-right: 5px;
+				}
+			}
+		}
+	}
+
+	/* Main Body */
+
+	.mainBody{
+		height:100%;
+		width:100%;
+		background-color:#ddd;
+		float:left;
+		padding:40px;
+		.itemBookSingleAdd{
+			height:50px;
+			width:80%;
+			background-color:#60b044;
+			float:right;
+			border-radius:100px;
+			cursor:pointer;
+			h3{
+				color: #fff;
+			    float: left;
+			    margin-top: 0;
+			    padding-top: 16px;
+			    font-family: 'Lato';
+			    font-size: 15px;
+			    font-weight: 700;
+			    text-transform: uppercase;
+			}
+			a{
+				color:#fff;
+				text-align:center;
+				float:right;
+				&:hover{
+					color:#FFF;
+				}
+				i{
+				    color: #fff;
+				    font-size: 21px;
+				    padding-top: 13px;
+				    text-align: center;
+				    float:right;
 				}
 			}
 		}
