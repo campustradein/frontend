@@ -1,14 +1,14 @@
-/* ============================== 
-	
+/* ==============================
+
 	Project Name : Campus Trade In
 	Author 		 : Campus Trade In
 	Author URI   : https://www.campustradein.com/
 	Project Last Updated : 13/06/2016
-	
-	CSS Details  : 
 
-	1. Default Variables 
-	2. navigation 
+	CSS Details  :
+
+	1. Default Variables
+	2. navigation
 	3. header section
 	4. login/signup form modal
 
@@ -81,12 +81,12 @@ a:focus {
 }
 .navbar-default .navbar-brand {
   color: #2780e3;
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Roboto';
-  font-weight: 300;
+  font-weight: 600;
   padding-left: 100px;
   padding-top: 16px;
-  letter-spacing: 0px;
+  /*letter-spacing: 0px;*/
   cursor: pointer;
 }
 .navbar-default .navbar-brand:hover {
@@ -111,8 +111,8 @@ a:focus {
 }
 .navbar-right li {
   height: 100%;
-  width: 109px;
-  text-align: center;
+  /*width: 109px;*/
+  /*text-align: center;*/
   padding-top: 2px;
   cursor: pointer;
 }
@@ -123,7 +123,10 @@ a:focus {
   -o-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
 }
-.navbar-right li a:hover {
+.dropdown-menu {
+	color: black;
+}
+.navbar-right li a:hover, .navbar-right li ul li a:hover {
   color: #2780e3 !important;
   text-decoration: underline;
 }
@@ -151,10 +154,10 @@ a:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .header .overlayHeader h1 {
-  letter-spacing: 2px;
+  /*letter-spacing: 2px;*/
   font-size: 68px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   color: #fff;
   text-align: center;
   padding-top: 162px;
@@ -163,10 +166,10 @@ a:focus {
 }
 .header .overlayHeader h4 {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   color: #fff;
   text-align: center;
-  letter-spacing: 0px;
+  /*letter-spacing: 0px;*/
   font-weight: 300;
 }
 .header .overlayHeader form {
@@ -178,10 +181,10 @@ a:focus {
   display: block;
   min-width: 400px;
   font-family: 'Lato', sans-serif;
-  height: 55px;
+  height: 50px;
   padding: 6px 12px;
   font-size: 14px;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 15px 0px 15px;
   line-height: 1.42857143;
   color: #000!important;
   background-color: #fff;
@@ -199,7 +202,7 @@ a:focus {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 .header .overlayHeader form .SearchButton {
-  height: 55px;
+  height: 50px;
   width: 150px;
   border-radius: 0px;
   background-color: #2780e3;
@@ -209,7 +212,7 @@ a:focus {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0px;
+  /*letter-spacing: 0px;*/
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -254,7 +257,7 @@ a:focus {
   top: 49px;
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: 0px;
+  /*letter-spacing: 0px;*/
 }
 .modalCustom ul {
   margin: 100px auto;
@@ -306,7 +309,7 @@ a:focus {
   background-color: #3B5998;
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
+  /*letter-spacing: 1px;*/
   border: none;
 }
 .modalCustom .itemModelForms .itemLoginForm button span {
@@ -347,8 +350,8 @@ a:focus {
   background-color: #2780e3;
 }
 .modalCustom .itemModelForms .itemSignUpForm {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .modalCustom .itemModelForms .itemSignUpForm button {
   height: 50px;
@@ -359,7 +362,7 @@ a:focus {
   background-color: #3B5998;
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
+  /*letter-spacing: 1px;*/
   border: none;
 }
 .modalCustom .itemModelForms .itemSignUpForm button span {
@@ -427,7 +430,7 @@ a:focus {
   font-family: 'Roboto', sans-serif;
   color: #333;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  /*letter-spacing: 1px;*/
   padding-top: 70px;
   margin-top: 0px;
 }
@@ -674,14 +677,14 @@ a:focus {
   text-align: center;
   font-family: 'Roboto';
   font-size: 60px;
-  letter-spacing: 1px;
+  /*letter-spacing: 1px;*/
   padding-top: 130px;
   margin-bottom: 62px;
   color: #2780e3;
 }
 .accountActivation h2 {
   text-align: center;
-  letter-spacing: 1px;
+  /*letter-spacing: 1px;*/
 }
 .accountActivation p {
   line-height: 30px;
@@ -714,7 +717,7 @@ a:focus {
   background-color: #2780e3;
   color: #fff;
   font-family: 'Roboto';
-  letter-spacing: 0px;
+  /*letter-spacing: 0px;*/
 }
 /* footer section */
 footer {
@@ -728,6 +731,13 @@ footer p {
   color: #4f4f4f;
   text-align: center;
   padding-top: 42px;
+}
+/* account activation modal */
+#signupSuccess {
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;*/
 }
 /* ====================================================
 
@@ -819,15 +829,7 @@ footer p {
   .navbar-right li {
     border: none;
     height: 100%;
-    width: 109px;
-    text-align: center;
-    padding-top: 11px;
-    cursor: pointer;
-  }
-  .navbar-right li {
-    border: none;
-    height: 100%;
-    width: 109px;
+    /*width: 109px;*/
     text-align: center;
     padding-top: 11px;
     cursor: pointer;
@@ -1006,7 +1008,7 @@ footer p {
   .navbar-right li {
     border: none;
     height: 100%;
-    width: 109px;
+    /*width: 109px;*/
     text-align: center;
     padding-top: 11px;
     cursor: pointer;
