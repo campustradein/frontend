@@ -4,45 +4,34 @@
 /*
 	
 	1. Slide Menu
-	
+	2. slide Menu Active Item
+
 */
-
-  // $('.SlideMenu').on('click', function () {
-
-  //   $('.asideMenu').css({
-  //     'left':'-190px'
-  //   });
-
-  //   $('.slideMenuOpen').empty();
-  //   $('.slideMenuOpen').html('<i class="fa fa-arrow-circle-right openMenu" aria-hidden="true"></i>');
-
-  // });
-
-  // $('.openMenu').on('click', function() {
-  //   $('.asideMenu').css({
-  //     'left':'0px'
-  //   });
-  //   $('.slideMenuOpen').empty();
-  //   $('.slideMenuOpen').html('<i class="fa fa-align-justify SlideMenu" aria-hidden="true"></i>');
-  // });
-
-
   
+/* 1. Slide Menu */
+
 $('.slideMenuOpen').click(function() {
 
   if ($(this).children('i').hasClass('SlideMenu')) {
     $('.asideMenu').css({
       'left':'-200px'
     });
-    $(this).empty();
-    $(this).html('<i class="fa fa-arrow-circle-right openMenu" aria-hidden="true"></i>');
+    $(this).children('i').removeClass('SlideMenu').addClass('openMenu');
   }
   else{
     $('.asideMenu').css({
       'left':'0px'
     });
-    $(this).empty();
-    $(this).html('<i class="fa fa-align-justify SlideMenu" aria-hidden="true"></i>');
+    $(this).children('i').removeClass('openMenu').addClass('SlideMenu');
   }
 
 });
+
+
+  /* Slide menu active item */
+
+  $('.mainListItems li').on('click', function(){
+
+    $(this).addClass('activeState').siblings().removeClass('activeState');
+
+  });

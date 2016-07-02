@@ -88,6 +88,28 @@
 	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
 	    margin-left: 7px;
 	}
+	.hamburger{
+	    float: left;
+	    position: relative;
+	    left: 15px;
+	    top: 3px;
+		.SlideMenu{
+ 	        font-size: 14px;
+		    position: absolute;
+		    top: 18px;
+		    right: 9px;
+		    cursor: pointer;
+		    color: #777;
+		}
+		.openMenu{
+	        font-size: 14px;
+		    position: absolute;
+		    top: 18px;
+		    right: 9px;
+		    cursor: pointer;
+		    color: #777;
+		}
+	}
 
 /* aside menu */
 	
@@ -95,8 +117,6 @@
 		height:100%;
 		width:240px;
 		background-color:#222d32;
-		padding-left:10px;
-		padding-right:10px;
 		position:absolute;
 		.transitions;
 		.user{
@@ -142,14 +162,13 @@
 			list-style:none;
 			margin-top:50px!important;
 			padding:0px;
+			.activeState{
+				height:40px;
+				background-color:#1e282c;
+			}
 			li{
-				.SlideMenu{
-				 	font-size: 19px;
-				    position: absolute;
-				    top: 15px;
-				    right: 9px;
-				    cursor:pointer;
-				}
+				cursor:pointer;
+				min-height:40px;
 				.openMenu{
 					font-size: 19px;
 				    position: absolute;
@@ -161,9 +180,9 @@
 				a{
 					color:#b8c7ce;
 					font-weight:400;
-					font-size:17px;
+					font-size:15px;
 					font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif; 
-					padding-left:2px;
+					padding-left:15px;
 					&:hover{
 						color:#fff;
 						text-decoration:none;
@@ -172,7 +191,7 @@
 				i{
 			     	color: #b8c7ce;
 				    float: right;
-				    padding-right: 5px;
+			        padding-right: 15px;
 				}
 			}
 		}
@@ -188,7 +207,7 @@
 		padding:40px;
 		.itemBookSingleAdd{
 		    height: 42px;
-    		width: 211px;
+    		width: 148px;
 			background-color:#60b044;
 			float:right;
 			border-radius:4px;
@@ -201,7 +220,7 @@
 			    float: none;
 			    text-align: center;
 			    margin-top: 0;
-			    padding-top: 10px;
+			    padding-top: 11px;
 			    font-family: Lato;
 			    font-size: 13px;
 			    font-weight: 800;
@@ -228,7 +247,7 @@
 			}
 		}
 		.itemSingleBook{
-		    height: 140px;
+		    height: 157px;
 		    width: 80%;
 		    background-color:transparent;
 		    float: right;
@@ -240,7 +259,7 @@
 		    	height:100px;
 		    	width:100px;
 		    	float:left;
-		    	margin-top: 8px;
+		    	margin-top: 4px;
     			margin-left: 10px;
 		    }
 		    .contentSingleBook{
@@ -273,6 +292,9 @@
 				    color: #6d6d6d;
 				    padding-top: 10px;
 				    float:left;
+		    	}
+		    	.buttonStack{
+		    		padding-top:0px;
 		    	}
 		    	a{
 		    		float:left;
