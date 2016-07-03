@@ -79,7 +79,7 @@
 		<section class="mainBody">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12 itemBookSingleAdd">
+					<div class="col-lg-12 itemBookSingleAdd" data-toggle="modal" data-target="#myModal">
 						<h3>Add New Book</h3>
 					</div>
 					<div class="clearfix"></div>
@@ -146,7 +146,56 @@
 				</div>
 			</div>	
 		</section>
-
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Add New Book</h4>
+		      </div>
+		      <div class="modal-body">
+		        <form>
+				  <div class="form-group">
+				    <label>Title</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label>Author</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label>isbn13</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label>isbn10</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label>listedBy</label>
+				     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label>Categories</label>
+				     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label>Condition</label>
+				     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label>Price</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <p class="bookSubmit">
+				  	<button type="submit" class="btn btn-primary">Submit</button>
+				  </p>
+				</form>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 		<!-- javascript Libraries and custom files -->
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js"></script>
