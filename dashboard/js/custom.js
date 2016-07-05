@@ -57,11 +57,5 @@
     $('.slideMenuOpen').trigger('click');
   }
 
-  /* add a book automatically after submitting a form */
-
-  // $('#addBookForm').submit(function(e){
-  //   e.preventDefault();
-  //   $('.close').trigger('click');
-  //   $('#addNewBook').append('testing');
-  // });
+  /* */
 

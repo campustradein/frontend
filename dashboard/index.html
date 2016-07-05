@@ -387,55 +387,74 @@
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 		        <h4 class="modal-title" id="myModalLabel">Add New Book</h4>
 		      </div>
-		       <form id="addBookForm">
-			      	<div class="modal-body">
-						<div class="form-group">
-							<label>ISBN 13</label>
-							<input type="email" class="form-control">
-						</div>
-						<div class="form-group">
-							<label>ISBN 10</label>
-							<input type="email" class="form-control">
-						</div>
-						<div class="form-group">
-							<label>Book Title</label>
-							<input type="email" class="form-control">
-						</div>
-						<div class="form-group">
-							<label>Author</label>
-							<input type="email" class="form-control">
-						</div>
-						<div class="form-group">
-							<label>Price</label>
-						 	<input type="number" class="form-control">
-						</div>
-						<div class="form-group">
-							<label>Categories</label>
-						 	<input type="email" class="form-control">
-						</div>
-						<div class="form-group">
-							<label>Condition</label>
-						 	<input type="email" class="form-control">
-						</div>
-						<div class="form-group">
-							<label>Upload Book</label>
-						 	<input type="file" class="form-control" value="upload File">
-						</div>
-			      	</div>
-					<div class="modal-footer">
-						<button type="submit" class="btn btn-primary">Submit</button>
+		      <form>
+				<div class="modal-body">
+					<div class="form-group">
+						<label>Search Books</label>
+						<input type="text" class="form-control">
+						<h6 class="poweredByGoogle">Powered by google</h6>
 					</div>
-		      	</form>
+				
+					<div class="form-group">
+						<label for="exampleInputName2">Book Title</label>
+						<input type="text" class="form-control" id="exampleInputName2">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail2">Categories</label>
+						<input type="email" class="form-control" id="exampleInputEmail2">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputName2">Price</label>
+						<input type="number" class="form-control" id="exampleInputName2">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail2">Categories</label>
+						<input type="email" class="form-control" id="exampleInputEmail2">
+					</div>
+					<div class="dragdropBuilder" ng-app='MyModule'>
+						<div ng-controller='DefaultCtrl'>
+							<input type="file" id="file" auto-complete ui-items="names" ng-model="selected">
+							<i class="fa fa-file-archive-o" aria-hidden="true"></i>
+							<h6>Drag Your Files Here or </h6>
+						</div>
+					</div>
+					</div>
+					<div class="modal-footer">
+				        <button type="submit" class="btn btn-primary">Submit</button>
+			      	</div>
+	 	      </form>
 		    </div>
 		  </div>
 		</div>
 		<!-- javascript Libraries and custom files -->
 		<script src="js/jquery.js"></script>
+		<script src="js/angular.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/morphext.js"></script>
 		<script src="js/backstretch.min.js"></script>
 		<script src="js/wow.js"></script>
 		<script src="js/owl.carousel.js"></script>
+		<script>
+			  // function DefaultCtrl($scope) {
+			  //   $scope.names = ["john", "bill", "charlie", "robert", 
+			  //   "alban", "oscar", "marie", "celine", "brad", "drew", "rebecca", 
+			  //   "michel", "francis", "jean", "paul", "pierre", "nicolas", "alfred",
+			  //   "gerard", "louis", "albert", "edouard", "benoit", "guillaume", "nicolas", "joseph"];
+			  // }
+
+			  // angular.module('MyModule', []).directive('autoComplete', function($timeout) {
+			  //     return function(scope, iElement, iAttrs) {
+			  //             iElement.autocomplete({
+			  //                 source: scope[iAttrs.uiItems],
+			  //                 select: function() {
+			  //                     $timeout(function() {
+			  //                       iElement.trigger('input');
+			  //                     }, 0);
+			  //                 }
+			  //             });
+			  //     };
+			  // });
+		</script>
 		<script src="js/custom.js"></script>
 	</body>
 </html>
