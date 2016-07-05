@@ -53,9 +53,9 @@
   });
 
 
-  // if (window.matchMedia('(max-width: 480px)').matches) {
-  //   $('.slideMenuOpen').click();
-  // }
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    $('.slideMenuOpen').trigger('click');
+  }
 
   /* add a book automatically after submitting a form */
 
