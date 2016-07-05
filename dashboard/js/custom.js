@@ -56,3 +56,10 @@
   // if (window.matchMedia('(max-width: 480px)').matches) {
   //   $('.slideMenuOpen').click();
   // }
+
+  /* add a book automatically after submitting a form */
+
+  $('#addBookForm').submit(function(e){
+    e.preventDefault();
+    $('#addNewBook').append( "<p>Test</p>" );
+  });
