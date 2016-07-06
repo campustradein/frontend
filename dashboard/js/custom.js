@@ -52,11 +52,6 @@
 
   });
 
-
-  if (window.matchMedia('(max-width: 768px)').matches) {
-    $('.slideMenuOpen').trigger('click');
-  }
-
   /* auto complete form fields */
 
  
