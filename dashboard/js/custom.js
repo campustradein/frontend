@@ -75,8 +75,13 @@
       }
     }
   };
+
   $("#basics").easyAutocomplete(options);
 
   $('.easy-autocomplete-container').on('click', function(){
-    alert('');
+
+    $('#bookTitle').children('input').val('Fundamentals of jQuery');
+    $('#categories').children('input').val('Fundamentals');
+    $('#price').children('input').val(100);
+
   }); 
