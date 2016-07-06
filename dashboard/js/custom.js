@@ -61,11 +61,10 @@
 
  
   var options = {
-    data: [ {name: "Avionet", type: "air", icon: "http://lorempixel.com/100/50/transport/2"},
-      {name: "Car", type: "ground", icon: "http://lorempixel.com/100/50/transport/8"},
-      {name: "Motorbike", type: "ground", icon: "http://lorempixel.com/100/50/transport/10"},
-      {name: "Plane", type: "air", icon: "http://lorempixel.com/100/50/transport/1"},
-      {name: "Train", type: "ground", icon: "http://lorempixel.com/100/50/transport/6"}],
+    data: [ {name: "Book of Denzen", type: "James Butler", icon: "http://lorempixel.com/100/50/transport/2"},
+      {name: "Fundamentals of jQuery", type: "Ray Jay", icon: "http://lorempixel.com/100/50/transport/8"},
+      {name: "Angular JS 2", type: "Daniel James", icon: "http://lorempixel.com/100/50/transport/10"},
+      {name: "AngularJS", type: "Raymond", icon: "http://lorempixel.com/100/50/transport/1"}],
 
     getValue: "name",
 
