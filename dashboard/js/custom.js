@@ -40,7 +40,6 @@
         'float':'left'
       });
     }
-
   });
 
 
@@ -80,3 +79,17 @@
     $('#price').children('input').val(100);
 
   }); 
+
+
+  // $(window).resize(function(){
+  //   if ($(window).width() <= 800){  
+  //     $('.slideMenuOpen').click(function(){
+  //       if($(this).children('i').hasClass('SlideMenu')){
+  //         $('.mainBody').css({
+  //           'margin-left':'100px'
+  //         });
+  //       }
+  //     });
+  //   }
+  // });
+
