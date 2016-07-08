@@ -46,9 +46,7 @@
   /* Slide menu active item */
 
   $('.mainListItems li').on('click', function(){
-
     $(this).addClass('activeState').siblings().removeClass('activeState');
-
   });
 
   /* auto complete form fields */

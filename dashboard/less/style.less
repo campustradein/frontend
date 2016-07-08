@@ -223,12 +223,12 @@
 	/* Main Body */
 
 	.mainBody{
-		height:100%;
-		width:100%;
-		background-color:#fff;
+		min-height:100%;
+		min-width:100%;
+		background-color:#f8f8f8;
 		float:left;
 		padding:40px;
-		margin-top: 70px;
+		margin-top: 59px;
 		.itemBookSingleAdd{
 	        height: 34px;
     		width: 137px;
@@ -275,8 +275,12 @@
 				}
 			}
 		}
-		.itemSingleBook:last-child{
+		.itemSingleBook:nth-child(11){
 			margin-bottom:100px; 
+			border-bottom:1px solid #ccc!important;
+		}
+		.itemSingleBook:nth-child(3){
+			margin-top:40px;
 		}
 		.pagination{
 			margin: 0 auto;
@@ -284,16 +288,18 @@
 		    margin-bottom: 30px;
 		    width: 70%;
 		    float: right;
-		    margin-top: 30px;
+		    margin-top: 0px;
 		}
 		.itemSingleBook{
-		    height: 157px;
+	        height: 157px;
 		    width: 80%;
-		    background-color:transparent;
+		    background-color: #fff;
 		    float: right;
-		    margin-top: 40px;
-		    border-radius:4px;
-		    padding:20px;
+		    margin-top: 0px;
+		    border-radius: 0px;
+		    padding: 20px;
+		    border: 1px solid #ccc;
+		    border-bottom:0px;
 		    .imageSingleBook{
 		    	height:100px;
 		    	width:100px;
@@ -389,21 +395,22 @@
 	    z-index: 99999!important;
 	}
 	.dragdropBuilder{
-	    height: 100px;
+        height: 140px;
 	    width: 569px;
 	    margin: 17px auto;
 	    float: none;
 	    display: table;
-	    background-color: #fafafa;
-	    border: 1px solid #dcdcdc;
+	    background-color: #ffffff;
+	    border: 1px solid #f1f1f1;
 	    border-radius: 4px;
+	    cursor:pointer;
 	    i{
 	    	font-size: 28px;
 		    text-align: center;
 		    display: table;
 		    margin: 0 auto;
 		    float: none;
-		    padding-top: 19px;
+		    padding-top: 35px;
 		    color: #717171;
 	    }
 	    h6{
@@ -414,11 +421,11 @@
 		    padding-left: 117px;
 	    }
 	    #file{
-	    	height: 100px;
+	    	height: 140px;
 		    width: 569px;
 		    position: absolute;
-		    background-color: rgba(0,0,0,.2);
-		    padding-top: 56px;
+		    background-color: rgba(0,0,0,0.1);
+		    padding-top: 71px;
 		    padding-left: 296px;
 		    border-radius:4px;
 	    }
@@ -578,6 +585,141 @@
 	    top: 11px;
     }
 
+    /*  Single Product page / search product details */
+
+    .itemSingleProduct{
+	    min-height:100%;
+	    min-width: 100%;
+	    margin-top: 50px;
+	    padding:0px;
+	    .mainContainer{
+	    	height: 600px;
+		    width: 431px;
+		    float: left;
+    	 	.itemSingleProductImageMain{
+	       	 	height: 380px;
+			    width: 431px;
+			    float: left;
+			    background-color: #f8f8f8;
+			    border: 1px solid #ccc;
+			    margin-top: 50px;
+		    }
+		    .itemSingleImage:nth-child(2){
+		    	margin-left:0px;
+		    }
+		    .itemSingleImage{
+	    	    height: 129px;
+			    width: 98px;
+			    margin-left: 13px;
+			    margin-top: 13px;
+			    border: 1px solid #ccc;
+			    background-color:#f8f8f8;
+			    padding: 0;
+			    float: left;
+		    }
+	    }
+	   	.itemContentSection{
+		   	.seprator {
+		        position: relative;
+			    left: 40px;
+			    width: 327px;
+			    text-align: left;
+			    display:block;
+			    background-color:#ccc;
+			    height:1px;
+			}
+   		    float: left;
+		    height: 522px;
+		    width: 739px;
+		    margin-top: 50px;
+		    h2{
+	    	    font-size: 20px;
+			    color: #282828;
+			    float: left;
+			    margin-top: 0px;
+			    padding-left: 39px;
+			    padding-top: 0px;
+			    font-weight: 700;
+		    }
+		    p{
+		    	line-height: 22px;
+			    font-family: Lato;
+			    color: #6d6d6d;
+			    padding-top: 3px;
+			    float: left;
+			    padding-left:40px;
+		    }
+
+		    .categories{
+		    	list-style:none;
+		    	float:left;
+		    	margin-top:5px;
+		    	li{
+		    		padding-top:6px;
+		    		font-size:15px;
+		    		span{
+		    			font-weight:700;
+		    			padding-right:5px;
+		    		}
+		    		
+		    	}
+		    }
+		    .pricing{
+		    	h2{
+		    		float:left;
+		    		font-size:15px;
+		    		color:#282828;
+		    		font-weight:700;
+		    		padding-top:14px;
+		    	}
+		    }
+		    .oldPrice{
+	    	    font-size: 18px;
+			    color: #e05100;
+			    font-weight: 400;
+			    float: left;
+			    margin-top: 0px;
+			    padding-left: 20px;
+			    position: relative;
+			    bottom: 4px;
+			    padding-top:14px;		   
+	     	}
+	     	.newPrice{
+     		    font-size: 22px;
+			    color: #282828;
+			    font-weight: 400;
+			    float: left;
+			    margin-top: 0;
+			    padding-left: 20px;
+			    position: relative;
+			    bottom: 8px;
+			    padding-top:14px;
+	     	}
+	     	.quantity{
+	     		float:left;
+	    		font-size:15px;
+	    		color:#282828;
+	    		font-weight:700;
+	    		padding-top:10px;
+	    		margin-bottom:5px;
+	    		padding-bottom:5px;
+	     	}
+	     	button.btn-danger{
+				cursor:pointer;
+			    color: #fff;
+			    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+			    background-color:#e05100;
+			   	border:none;
+			   	margin-right:10px;
+			   	box-shadow: -4px 3px 0px 0px rgba(0, 0, 0, 0.2);
+			   	.transitions;
+			   	margin-top:41px;
+			   	&:hover{
+			   		background-color:#b54404;
+			   	}
+			}
+	   	}
+    }
 
 /* ====================================================
 
@@ -586,10 +728,513 @@
    ==================================================== */
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+	/* navbar section */
+	.navbar-toggle{
+	    background-color: @defaultThemeColor;
+	    border-radius:0px;
+	    margin-top:10px;
+	    &:hover{
+	    	background-color: @defaultThemeColor;
+	    }
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+	    background-color: #fff;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	    background-color: #fff;
+	    border-color: #e7e7e7;
+	    margin-top: 6px;
+	    position: absolute;
+	    z-index: 9999999999;
+	    width: 100%;
+	    text-align: center;
+	}
+	.navbar-default .navbar-right {
+	    float: none!important;
+	    margin-right: 0;
+	    text-align:center;
+	    color:#fff;
+	}
+
+	/* single book item */
+
+	.mainBody .itemSingleBook {
+	    height: 157px;
+	    width: 80%;
+	    background-color: #fff;
+	    border-radius: 0px;
+	    padding: 20px;
+	    margin: 0px auto;
+	    display: table;
+	    float: none;
+	}
+	.mainBody .itemSingleBook .imageSingleBook {
+	    height: 100px;
+	    width: 100px;
+	    float: none;
+	    margin-top: 4px;
+	    margin-left: 0px;
+	    margin: 4px auto;
+	    margin-bottom: 34px;
+	    img{
+	    	display:table;
+	    	margin:0 auto;
+	    }
+	}
+	.mainBody .itemSingleBook .contentSingleBook {
+	    float: none;
+	    height: 80px;
+	    width: 100%;
+	    display: table;
+	    margin: 0 auto;
+	}
+	.mainBody .itemSingleBook .contentSingleBook h3 {
+	    margin-top: 0;
+	    margin-bottom: 0;
+	    font-size: 16px;
+	    font-weight: 700;
+	    color: #232323;
+	    font-family: Lato;
+	    float: none;
+	    text-align: center;
+	}
+	.mainBody .itemSingleBook .contentSingleBook .buttonStack button.btn-success {
+	    cursor: pointer;
+	    color: #fff;
+	    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+	    background-color: #60b044;
+	    background-image: -webkit-linear-gradient(#8add6d,#60b044);
+	    background-image: linear-gradient(#8add6d,#60b044);
+	    border-color: #5ca941;
+	    margin: 0 auto;
+	    display: table;
+	    float: none;
+	    margin-bottom: 10px;
+	    width:100%;
+	}
+	.mainBody .itemSingleBook .contentSingleBook p{
+		float:none;
+		text-align:center;
+	}
+	.mainBody .itemSingleBook .contentSingleBook .buttonStack button.btn-primary{
+		margin: 0 auto;
+	    display: table;
+	    float: none;
+	    margin-bottom: 10px;
+	    width:100%;
+	}
+	.mainBody .itemSingleBook .contentSingleBook .buttonStack button.btn-danger{
+		margin: 0 auto;
+	    display: table;
+	    float: none;
+	    margin-bottom: 10px;
+	    width:100%;
+	}
+	.mainBody .itemBookSingleAdd {
+	    height: 34px;
+	    width: 80%;
+	    float: none;
+	    border-radius: 4px;
+	    cursor: pointer;
+	    color: #fff;
+	    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+	    background-color: #60b044;
+	    background-image: -webkit-linear-gradient(#8add6d,#60b044);
+	    background-image: linear-gradient(#8add6d,#60b044);
+	    border-color: #5ca941;
+	    margin: 0 auto;
+	    display: table;
+	    float: none;
+	}
+	.mainBody .pagination{
+		float:none;
+	}
+	.dragdropBuilder{
+		width:100%;
+	}
+	.dragdropBuilder #file {
+	    height: 100px;
+	    width: 85%!important;
+	    position: absolute;
+	    background-color: rgba(0,0,0,.2);
+	    padding-top: 56px;
+	    padding-left: 0px;
+	    border-radius: 4px;
+	}
+	.dragdropBuilder h6{
+		display:none;
+	}
+	.easy-autocomplete{
+		margin:0 auto;
+		display:table;
+		float:none;
+	}
+	.searchBooksLabel{
+		text-align:center;
+		float:none;
+		display:table;
+		margin:0 auto;
+		margin-bottom:15px;
+	}
+	.poweredByGoogle{
+		text-align:center;
+	}
+	label{
+		text-align:center;
+		display:table;
+		float:none;
+		margin:0 auto;
+		margin-bottom:10px;
+	}
+	.form-control {
+	    display: block;
+	    width: 280px;
+	    height: 34px;
+	    padding: 6px 12px;
+	    font-size: 14px;
+	    line-height: 1.42857143;
+	    color: #555;
+	    background-color: #fff;
+	    background-image: none;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	    margin: 0 auto;
+	    float: none;
+	}
+	#basics, .easy-autocomplete-container {
+	    min-width: 280px!important;
+	    margin:0 auto;
+	    display:table;
+	    float:none;
+	}
+	.dragdropBuilder {
+	    width: 280px;
+	    margin: 22px auto;
+	}
+	.dragdropBuilder #file {
+	    height: 100px;
+	    width: 280px!important;
+	    position: absolute;
+	    background-color: rgba(0,0,0,.2);
+	    padding-top: 56px;
+	    padding-left: 0;
+	    border-radius: 4px;
+	}
+	.asideMenu{
+		left:-193px;
+		z-index:999;
+	}
+	.mainListItems li a{
+		display:none;
+	}
+	.mainListItems{
+		width:46px;
+	}
+	.mainListItems{
+		float:right;
+	}
 	
+
+	.itemSingleEmailOptions {
+	    float: none;
+	    height: 37px!important;
+	    width: 80%;
+	    margin-bottom: 20px;
+	    padding: 0;
+	    margin: 6px auto;
+	    display: table;
+	}
+	.itemSingleEmailOptions select {
+	    margin: 0 10px 0 0;
+	    background: 0 0;
+	    width: 100%;
+	    padding: 1px 35px 5px 5px;
+	    font-size: 16px;
+	    border: 1px solid #ccc;
+	    height: 34px;
+	    color: #888;
+	    cursor: pointer;
+	    border-radius: 4px;
+	    float: none;
+	    display: table;
+	    margin: 6px auto;
+	}
+	.paginationEmail {
+	    float: none;
+	    height: 37px;
+	    width: 100%;
+	    padding: 0;
+	    display: table;
+	}
+	.itemSingleEmailOptions .paginationEmail
+	{
+		width:100%;
+	}
+	.itemSingleEmailOptions .paginationEmail .pagination {
+	    list-style: none;
+	    padding: 0;
+	    margin: 0;
+	    position: relative;
+	    left: 0px;
+	    top: 3px;
+	    margin: 6px auto;
+	    display: table;
+	    float: none;
+	    text-align: center;
+	}
+	.itemSingleEmailOptions .paginationEmail .pagination li {
+		height: 41px;
+		width: 30px;
+		background-color: #fff;
+		margin-right: 10px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		padding: 8px;
+		transition: all .5s ease;
+		-webkit-transition: all .5s ease;
+		-o-transition: all .5s ease;
+		-moz-transition: all .5s ease;
+	}
+	.itemSingleUnRead {
+	    cursor: pointer;
+	    height: 46px;
+	    width: 80%;
+	    float: right;
+	    border: 1px solid #ccc;
+	    border-bottom: none;
+	    background-color: #f7f7f7;
+	    float: none;
+	    display: table;
+	    float: none;
+	    margin:0 auto;
+	}
+	.itemSingleRead {
+	    background-color: #fff!important;
+	    cursor: pointer;
+	    height: 46px;
+	    width: 80%;
+	    float: right;
+	    border: 1px solid #ccc;
+	    border-bottom: none;
+	    float: none;
+	    display: table;
+	    margin: 0 auto;
+	}
+	.itemSingleUnRead .header h6 {
+    	float: left;
+    	color: #8c8c8c;
+	    font-weight: 600;
+	    padding-left: 0;
+	    cursor: pointer;
+	    padding-top: 6px;
+	    font-size: 10px;
+    }
+    
+	.itemSingleUnRead .content {
+	    height: 10px;
+	    width: 70px;
+	    float: left;
+	    margin-left: 0px;
+	}
+	.itemSingleUnRead .content p {
+	    float: left;
+	    color: #8c8c8c;
+	    font-size: 10px;
+	    position: relative;
+	    top: 0px;
+	    padding-top: 8px;
+	    font-weight: 600;
+	    float: left;
+	    text-align: left;
+	}
+	.itemSingleUnRead h5 {
+	    color: #8c8c8c;
+	    font-size: 14px;
+	    position: relative;
+	    top: 0;
+	    padding-top: 1px;
+	    font-weight: 600;
+	    float: right;
+	    font-size: 9px;
+	    position: absolute;
+	    top: 0;
+	    right: 7px;
+	}
+	.itemSingleUnRead .header {
+	    height: 10px;
+	    width: 86px;
+	    text-align: center;
+	    padding-left: 0;
+	    margin-left: 8px;
+	    float: left;
+	}
+	.itemSingleRead .header h6 {
+    	float: left;
+    	color: #8c8c8c;
+	    font-weight: 600;
+	    padding-left: 0;
+	    cursor: pointer;
+	    padding-top: 6px;
+	    font-size: 10px;
+    }
+    
+	.itemSingleRead .content {
+	    height: 10px;
+	    width: 70px;
+	    float: left;
+	    margin-left: 0px;
+	}
+	.itemSingleRead .content p {
+	    float: left;
+	    color: #8c8c8c;
+	    font-size: 10px;
+	    position: relative;
+	    top: 0px;
+	    padding-top: 8px;
+	    font-weight: 600;
+	    float: left;
+	    text-align: left;
+	}
+	.itemSingleRead h5 {
+	    color: #8c8c8c;
+	    font-size: 14px;
+	    position: relative;
+	    top: 0;
+	    padding-top: 1px;
+	    font-weight: 600;
+	    float: right;
+	    font-size: 9px;
+	    position: absolute;
+	    top: 0;
+	    right: 7px;
+	}
+	.itemSingleRead .header {
+	    height: 10px;
+	    width: 86px;
+	    text-align: center;
+	    padding-left: 0;
+	    margin-left: 8px;
+	    float: left;
+	}
+	.dragdropBuilder {
+	    height: 28px;
+	    width: 280px;
+	    margin: 17px auto;
+	    float: none;
+	    display: table;
+	    background-color: #fff;
+	    border: 1px solid #f1f1f1;
+	    border-radius: 4px;
+	    cursor: pointer;
+	}
+	.dragdropBuilder #file {
+	    height: 26px;
+	    width: 280px!important;
+	    position: absolute;
+	    background-color: transparent;
+	    padding-top: 2px;
+	    padding-left: 0;
+	    border-radius: 4px;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+	.mainBody .itemSingleBook {
+	    height: 157px;
+	    width: 80%;
+	    background-color: #fff;
+	    border-radius: 0px;
+	    padding: 20px;
+	    margin: 0px auto;
+	    display: table;
+	    float: none;
+	}
+	.mainBody .itemSingleBook .imageSingleBook {
+	    height: 100px;
+	    width: 100px;
+	    float: none;
+	    margin-top: 4px;
+	    margin-left: 0px;
+	    margin: 4px auto;
+	    margin-bottom: 34px;
+	    img{
+	    	display:table;
+	    	margin:0 auto;
+	    }
+	}
+	.mainBody .itemSingleBook .contentSingleBook {
+	    float: none;
+	    height: 80px;
+	    width: 100%;
+	    display: table;
+	    margin: 0 auto;
+	}
+	.mainBody .itemSingleBook .contentSingleBook h3 {
+	    margin-top: 0;
+	    margin-bottom: 0;
+	    font-size: 16px;
+	    font-weight: 700;
+	    color: #232323;
+	    font-family: Lato;
+	    float: none;
+	    text-align: center;
+	}
+	.mainBody .itemSingleBook .contentSingleBook .buttonStack button.btn-success {
+	    cursor: pointer;
+	    color: #fff;
+	    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+	    background-color: #60b044;
+	    background-image: -webkit-linear-gradient(#8add6d,#60b044);
+	    background-image: linear-gradient(#8add6d,#60b044);
+	    border-color: #5ca941;
+	    margin: 0 auto;
+	    display: table;
+	    float: none;
+	    margin-bottom: 10px;
+	    width:100%;
+	}
+	.mainBody .itemSingleBook .contentSingleBook p{
+		float:none;
+		text-align:center;
+	}
+	.mainBody .itemSingleBook .contentSingleBook .buttonStack button.btn-primary{
+		margin: 0 auto;
+	    display: table;
+	    float: none;
+	    margin-bottom: 10px;
+	    width:100%;
+	}
+	.mainBody .itemSingleBook .contentSingleBook .buttonStack button.btn-danger{
+		margin: 0 auto;
+	    display: table;
+	    float: none;
+	    margin-bottom: 10px;
+	    width:100%;
+	}
+	.mainBody .itemBookSingleAdd {
+	    height: 34px;
+	    width: 80%;
+	    float: none;
+	    border-radius: 4px;
+	    cursor: pointer;
+	    color: #fff;
+	    text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+	    background-color: #60b044;
+	    background-image: -webkit-linear-gradient(#8add6d,#60b044);
+	    background-image: linear-gradient(#8add6d,#60b044);
+	    border-color: #5ca941;
+	    margin: 0 auto;
+	    display: table;
+	    float: none;
+	}
+	.mainBody .pagination{
+		float:none;
+	}
 	.asideMenu{
 		left:-193px;
 	    position: fixed;
@@ -801,6 +1446,26 @@
 	    margin-left: 8px;
 	    float: left;
 	}
+	.dragdropBuilder {
+	    height: 28px;
+	    width: 280px;
+	    margin: 17px auto;
+	    float: none;
+	    display: table;
+	    background-color: #fff;
+	    border: 1px solid #f1f1f1;
+	    border-radius: 4px;
+	    cursor: pointer;
+	}
+	.dragdropBuilder #file {
+	    height: 26px;
+	    width: 280px!important;
+	    position: absolute;
+	    background-color: transparent;
+	    padding-top: 2px;
+	    padding-left: 0;
+	    border-radius: 4px;
+	}
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -835,18 +1500,16 @@
 
 	/* single book item */
 
-	.mainBody .itemSingleBook{
+	.mainBody .itemSingleBook {
 	    height: 157px;
 	    width: 80%;
-	    background-color: transparent;
-	    float: none;
-	    margin-top: 40px;
-	    border-radius: 4px;
+	    background-color: #fff;
+	    border-radius: 0px;
 	    padding: 20px;
-	    margin: 40px auto;
+	    margin: 0px auto;
 	    display: table;
 	    float: none;
-	} 
+	}
 	.mainBody .itemSingleBook .imageSingleBook {
 	    height: 100px;
 	    width: 100px;
@@ -1209,6 +1872,26 @@
 	    margin-left: 8px;
 	    float: left;
 	}
+	.dragdropBuilder {
+	    height: 28px;
+	    width: 280px;
+	    margin: 17px auto;
+	    float: none;
+	    display: table;
+	    background-color: #fff;
+	    border: 1px solid #f1f1f1;
+	    border-radius: 4px;
+	    cursor: pointer;
+	}
+	.dragdropBuilder #file {
+	    height: 26px;
+	    width: 280px!important;
+	    position: absolute;
+	    background-color: transparent;
+	    padding-top: 2px;
+	    padding-left: 0;
+	    border-radius: 4px;
+	}
 }
 
 @media screen and (min-width: 290px) and (max-width: 480px) {
@@ -1243,18 +1926,16 @@
 
 	/* single book item */
 
-	.mainBody .itemSingleBook{
+	.mainBody .itemSingleBook {
 	    height: 157px;
 	    width: 80%;
-	    background-color: transparent;
-	    float: none;
-	    margin-top: 40px;
-	    border-radius: 4px;
+	    background-color: #fff;
+	    border-radius: 0px;
 	    padding: 20px;
-	    margin: 40px auto;
+	    margin: 0px auto;
 	    display: table;
 	    float: none;
-	} 
+	}
 	.mainBody .itemSingleBook .imageSingleBook {
 	    height: 100px;
 	    width: 100px;
@@ -1607,5 +2288,25 @@
 	    padding-left: 0;
 	    margin-left: 8px;
 	    float: left;
+	}
+	.dragdropBuilder {
+	    height: 28px;
+	    width: 280px;
+	    margin: 17px auto;
+	    float: none;
+	    display: table;
+	    background-color: #fff;
+	    border: 1px solid #f1f1f1;
+	    border-radius: 4px;
+	    cursor: pointer;
+	}
+	.dragdropBuilder #file {
+	    height: 26px;
+	    width: 280px!important;
+	    position: absolute;
+	    background-color: transparent;
+	    padding-top: 2px;
+	    padding-left: 0;
+	    border-radius: 4px;
 	}
 }
