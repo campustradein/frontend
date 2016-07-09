@@ -721,6 +721,114 @@
 	   	}
     }
 
+    /* single product section */
+    
+    .productSection{
+    	width:100%;
+    	.col-lg-12{
+    		padding:0px;
+    	}
+    	.itemDescriptionAndReviews{
+    		height:300px;
+    		width:100%;
+    		background-color:#f8f8f8;
+    		border:1px solid #ccc;
+    		margin-bottom:20px;
+			ul{
+	    		margin: 0px;
+			    padding: 0px;
+			    list-style: none;
+			    li{
+			    	float:left;
+			    	padding:0px;
+			    	margin:0px;
+			    	width:50%;
+			    	a.activateStatus{
+			    	 	background-color: #ccc;
+			    	 	font-weight:800;
+				    }
+				    a{
+				    	float: left;
+				    	width:100%;
+					    height: 20px;
+					    margin-right:0px;
+					    height: 50px;
+					    padding-top: 14px;
+					    color: #282828;
+					    text-align: center;
+					    font-size:15px;
+					    font-weight:500;
+					    cursor: pointer;
+					    bacground-color:#f8f8f8;
+					    border-bottom:1px solid #ccc;
+					    padding-left:20px;
+				    	&:hover{
+				    		text-decoration:none;
+				    	}
+				    }
+			    }
+	    	}
+	    	.content{
+	    		h3{
+    			    padding-left: 20px;
+				    position: relative;
+				    top: 33px;
+				    font-size: 18px;
+				    font-weight: 600;
+	    		}
+	    		p{
+	    			padding-left: 21px;
+				    line-height: 22px;
+				    font-family: Lato;
+				    color: #6d6d6d;
+				    padding-top: 40px;
+				    float: left;
+	    		}
+   
+	    	}
+    	}
+    }
+    
+    /* Related Items */
+
+    .relatedItem:nth-child(2){
+    	margin-left:44px;
+    }
+    .relatedItem:nth-child(3){
+    	margin-left:44px;
+    }
+    .relatedItem{
+    	height:356px;
+    	width:360px;
+    	margin-top:20px;
+    	margin-bottom:50px;
+    	padding:0px;
+    	cursor:pointer;
+    	border:1px solid #ccc;
+    	.itemImage{
+    		height:250px;
+    		width:100%;
+    		background-color:#f8f8f8;
+    		border-bottom:1px solid #ccc;
+    	}
+    	.itemContent{
+    		height:100px;
+    		width:100%;
+    		h3{
+    			text-align: center;
+			    font-size: 18px;
+			    font-weight: 600;
+    		}
+    		h4{
+			    text-align: center;
+			    font-size: 17px;
+			    color: #e05100;
+			    font-weight: 700;
+			    padding-top: 9px;
+    		}
+    	}
+    }
+
 /* ====================================================
 
 		Media Quries for mobile and tablet devices
@@ -1141,6 +1249,57 @@
 	    padding-left: 0;
 	    border-radius: 4px;
 	}
+	.itemSingleProduct .mainContainer .itemSingleProductImageMain {
+	    height: 380px;
+	    width: 80%;
+	    float: none;
+	    background-color: #f8f8f8;
+	    border: 1px solid #ccc;
+	    margin-top: 50px;
+	    margin: 50px auto;
+	    display: table;
+	}
+	.itemSingleProduct .mainContainer {
+	    height: 1050px;
+	    width: 100%;
+	    float: left;
+	}
+	.itemSingleProduct .mainContainer .itemSingleImage {
+    	height: 129px;
+	    width: 98px;
+	    margin-left: 13px;
+	    margin-top: 52px;
+	    border: 1px solid #ccc;
+	    background-color: #f8f8f8;
+	    padding: 0;
+	    float: none;
+	    display: table;
+	    margin: 0 auto;
+	}
+	.itemSingleProduct .mainContainer .itemSingleImage:nth-child(2) {
+	    margin:0 auto;
+	}
+	.relatedItem {
+	    height: 356px;
+	    width: 80%;
+	    margin-top: 20px;
+	    margin-bottom: 50px;
+	    padding: 0;
+	    cursor: pointer;
+	    border: 1px solid #ccc;
+	    margin: 20px auto;
+	    float: none;
+	    display: table;
+	}
+	.relatedItem:nth-child(2){
+		margin:20px auto;
+	}
+	.relatedItem:nth-child(1){
+		margin:20px auto;
+	}
+	.relatedItem:nth-child(3){
+		margin:20px auto;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -1465,6 +1624,57 @@
 	    padding-top: 2px;
 	    padding-left: 0;
 	    border-radius: 4px;
+	}
+	.itemSingleProduct .mainContainer .itemSingleProductImageMain {
+	    height: 380px;
+	    width: 80%;
+	    float: none;
+	    background-color: #f8f8f8;
+	    border: 1px solid #ccc;
+	    margin-top: 50px;
+	    margin: 50px auto;
+	    display: table;
+	}
+	.itemSingleProduct .mainContainer {
+	    height: 1050px;
+	    width: 100%;
+	    float: left;
+	}
+	.itemSingleProduct .mainContainer .itemSingleImage {
+    	height: 129px;
+	    width: 98px;
+	    margin-left: 13px;
+	    margin-top: 52px;
+	    border: 1px solid #ccc;
+	    background-color: #f8f8f8;
+	    padding: 0;
+	    float: none;
+	    display: table;
+	    margin: 0 auto;
+	}
+	.itemSingleProduct .mainContainer .itemSingleImage:nth-child(2) {
+	    margin:0 auto;
+	}
+	.relatedItem {
+	    height: 356px;
+	    width: 80%;
+	    margin-top: 20px;
+	    margin-bottom: 50px;
+	    padding: 0;
+	    cursor: pointer;
+	    border: 1px solid #ccc;
+	    margin: 20px auto;
+	    float: none;
+	    display: table;
+	}
+	.relatedItem:nth-child(2){
+		margin:20px auto;
+	}
+	.relatedItem:nth-child(1){
+		margin:20px auto;
+	}
+	.relatedItem:nth-child(3){
+		margin:20px auto;
 	}
 }
 
@@ -2045,6 +2255,33 @@
 	    display: table;
 	    float: none;
 	}
+	.itemSingleProduct .itemContentSection {
+	    float: left;
+	    height: 612px;
+	    width: 100%;
+	    margin-top: 50px;
+	}
+	.relatedItem {
+	    height: 356px;
+	    width: 80%;
+	    margin-top: 20px;
+	    margin-bottom: 50px;
+	    padding: 0;
+	    cursor: pointer;
+	    border: 1px solid #ccc;
+	    margin: 20px auto;
+	    float: none;
+	    display: table;
+	}
+	.relatedItem:nth-child(2){
+		margin:20px auto;
+	}
+	.relatedItem:nth-child(1){
+		margin:20px auto;
+	}
+	.relatedItem:nth-child(3){
+		margin:20px auto;
+	}
 }
 
 @media screen and (min-width: 290px) and (max-width: 480px) {
@@ -2613,6 +2850,35 @@
 	    margin: 0 auto;
 	    display: table;
 	    float: none;
-	    
+	}
+	.productSection .itemDescriptionAndReviews {
+    	height: 600px;
+    }
+    .itemSingleProduct .itemContentSection {
+	    float: left;
+	    height: 612px;
+	    width: 100%;
+	    margin-top: 50px;
+	}
+	.relatedItem {
+	    height: 356px;
+	    width: 80%;
+	    margin-top: 20px;
+	    margin-bottom: 50px;
+	    padding: 0;
+	    cursor: pointer;
+	    border: 1px solid #ccc;
+	    margin: 20px auto;
+	    float: none;
+	    display: table;
+	}
+	.relatedItem:nth-child(2){
+		margin:20px auto;
+	}
+	.relatedItem:nth-child(1){
+		margin:20px auto;
+	}
+	.relatedItem:nth-child(3){
+		margin:20px auto;
 	}
 }

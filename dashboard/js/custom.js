@@ -78,6 +78,16 @@
 
   }); 
 
+  // search page item active 
+
+  $('.itemDescriptionAndReviews ul a').on('click', function(e){
+    e.preventDefault();
+  })
+
+  $('.itemDescriptionAndReviews ul li a').on('click', function(){
+    $('.itemDescriptionAndReviews ul li a').removeClass('activateStatus')
+    $(this).addClass('activateStatus');
+  });
 
   // $(window).resize(function(){
   //   if ($(window).width() <= 800){  
