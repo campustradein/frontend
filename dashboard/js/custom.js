@@ -19,20 +19,20 @@
         'left':'-193px'
       });
       $(this).children('i').removeClass('SlideMenu').addClass('openMenu');
-      $('.mainListItems li a').hide();
+      $('.mainListItems a li span').hide();
       $('.mainListItems').css({
         'width':'46px'
       });
       $('.mainListItems').css({
         'float':'right'
-      })
+      });
     }
     else{
       $('.asideMenu').css({
         'left':'0px'
       });
       $(this).children('i').removeClass('openMenu').addClass('SlideMenu');
-      $('.mainListItems li a').show();
+      $('.mainListItems a li span').show();
       $('.mainListItems').css({
         'width':'100%'
       });
@@ -45,8 +45,9 @@
 
   /* Slide menu active item */
 
-  $('.mainListItems li').on('click', function(){
-    $(this).addClass('activeState').siblings().removeClass('activeState');
+  $('.mainListItems a li').on('click', function(){
+    $('.mainListItems a li').removeClass()
+    $(this).addClass('activeState');
   });
 
   /* auto complete form fields */

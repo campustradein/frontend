@@ -50,11 +50,17 @@
 		            <li><a href="#">Sign Out</a></li>
 		          </ul>
 		        </li>
+		        <li class="hidden-md hidden-lg">
+		        	<a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="myBooksMobileTablet">My Books</a>
+		        </li>
+		        <li class="hidden-md hidden-lg">
+		        	<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class="myBooksMobileTablet">My Messages</a>
+		        </li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-		<aside class="asideMenu">
+		<aside class="asideMenu hidden-xs hidden-sm">
 			<!-- list items -->
 		 	<ul class="hamburger">
 		      	<li class="slideMenuOpen">
@@ -62,18 +68,18 @@
 			  	</li>
 	      	</ul>
 			<ul class="mainListItems" role="tablist">
-				<li role="presentation" class="activeState active">
-					<i class="fa fa-book" aria-hidden="true"></i>
-					<a href="#home" aria-controls="home" role="tab" data-toggle="tab">
-						My Books
-					</a>
-				</li>
-				<li role="presentation">
-					<i class="fa fa-inbox" aria-hidden="true"></i>
-					<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
-						My Messages
-					</a>
-				</li>
+				<a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="tabPane">
+					<li role="presentation" class="active activeState">
+						<i class="fa fa-book" aria-hidden="true"></i>
+						<span>My Books</span>
+					</li>
+				</a>
+				<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class="tabPane">
+					<li role="presentation">
+						<i class="fa fa-inbox" aria-hidden="true"></i>
+						<span>My Messages</span>
+					</li>
+				</a>
 			</ul>
 		</aside>
 
@@ -90,7 +96,7 @@
 							<div class="clearfix"></div>
 						
 							<div class="col-lg-12 itemSingleBook">
-								<div class="imageSingleBook">
+								<div class="imageSingleBook hidden-xs">
 									<img src="assets/books/book1.jpg">
 								</div>
 								<div class="contentSingleBook">
@@ -105,22 +111,22 @@
 										<span>
 											<button class="btn btn-success">
 												<i class="fa fa-check" aria-hidden="true"></i> 
-												Mark sold
+												<span class="hidden-xs hidden-sm">Mark sold</span>
 											</button>
 											<button class="btn btn-primary">
 												<i class="fa fa-pencil" aria-hidden="true"></i>
-												Edit
+												<span class="hidden-xs hidden-sm">Edit</span>
 											</button>
 											<button class="btn btn-danger">
 												<i class="fa fa-trash" aria-hidden="true"></i>
-												Delete
+												<span class="hidden-xs hidden-sm">Delete</span>
 											</button>
 										</span>
 									</p>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
-								<div class="imageSingleBook">
+								<div class="imageSingleBook hidden-xs">
 									<img src="assets/books/book2.jpg">
 								</div>
 								<div class="contentSingleBook">
@@ -134,23 +140,29 @@
 									<p class="buttonStack">
 										<span>
 											<button class="btn btn-success">
-												<i class="fa fa-check" aria-hidden="true"></i> 
-												Mark sold
+												<i class="fa fa-check" aria-hidden="true"></i>
+												<span class="hidden-xs hidden-sm"> 
+													Mark sold
+												</span>
 											</button>
 											<button class="btn btn-primary">
 												<i class="fa fa-pencil" aria-hidden="true"></i>
-												Edit
+												<span class="hidden-xs hidden-sm">
+													Edit
+												</span>
 											</button>
 											<button class="btn btn-danger">
 												<i class="fa fa-trash" aria-hidden="true"></i>
-												Delete
+												<span class="hidden-xs hidden-sm">
+													Delete
+												</span>
 											</button>
 										</span>
 									</p>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
-								<div class="imageSingleBook">
+								<div class="imageSingleBook hidden-xs">
 									<img src="assets/books/book3.jpg">
 								</div>
 								<div class="contentSingleBook">
@@ -165,22 +177,28 @@
 										<span>
 											<button class="btn btn-success">
 												<i class="fa fa-check" aria-hidden="true"></i> 
-												Mark sold
+												<span class="hidden-xs hidden-sm">
+													Mark sold
+												</span>
 											</button>
 											<button class="btn btn-primary">
 												<i class="fa fa-pencil" aria-hidden="true"></i>
-												Edit
+												<span class="hidden-xs hidden-sm">
+													Edit
+												</span>
 											</button>
 											<button class="btn btn-danger">
 												<i class="fa fa-trash" aria-hidden="true"></i>
-												Delete
+												<span class="hidden-xs hidden-sm">
+													Delete
+												</span>
 											</button>
 										</span>
 									</p>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
-								<div class="imageSingleBook">
+								<div class="imageSingleBook hidden-xs">
 									<img src="assets/books/book4.jpg">
 								</div>
 								<div class="contentSingleBook">
@@ -195,22 +213,28 @@
 										<span>
 											<button class="btn btn-success">
 												<i class="fa fa-check" aria-hidden="true"></i> 
-												Mark sold
+												<span class="hidden-xs hidden-sm">
+													Mark sold
+												</span>
 											</button>
 											<button class="btn btn-primary">
 												<i class="fa fa-pencil" aria-hidden="true"></i>
-												Edit
+												<span class="hidden-xs hidden-sm">
+													Edit
+												</span>
 											</button>
 											<button class="btn btn-danger">
 												<i class="fa fa-trash" aria-hidden="true"></i>
-												Delete
+												<span class="hidden-xs hidden-sm">
+													Delete
+												</span>
 											</button>
 										</span>
 									</p>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
-								<div class="imageSingleBook">
+								<div class="imageSingleBook hidden-xs">
 									<img src="assets/books/book5.jpg">
 								</div>
 								<div class="contentSingleBook">
@@ -225,22 +249,28 @@
 										<span>
 											<button class="btn btn-success">
 												<i class="fa fa-check" aria-hidden="true"></i> 
-												Mark sold
+												<span class="hidden-xs hidden-sm">
+													Mark sold
+												</span>
 											</button>
 											<button class="btn btn-primary">
 												<i class="fa fa-pencil" aria-hidden="true"></i>
-												Edit
+												<span class="hidden-xs hidden-sm">
+													Edit
+												</span>
 											</button>
 											<button class="btn btn-danger">
 												<i class="fa fa-trash" aria-hidden="true"></i>
-												Delete
+												<span class="hidden-xs hidden-sm">
+													Delete
+												</span>
 											</button>
 										</span>
 									</p>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
-								<div class="imageSingleBook">
+								<div class="imageSingleBook hidden-xs">
 									<img src="assets/books/book6.jpg">
 								</div>
 								<div class="contentSingleBook">
@@ -255,22 +285,28 @@
 										<span>
 											<button class="btn btn-success">
 												<i class="fa fa-check" aria-hidden="true"></i> 
-												Mark sold
+												<span class="hidden-xs hidden-sm">
+													Mark sold
+												</span>
 											</button>
 											<button class="btn btn-primary">
 												<i class="fa fa-pencil" aria-hidden="true"></i>
-												Edit
+												<span class="hidden-xs hidden-sm">
+													Edit
+												</span>
 											</button>
 											<button class="btn btn-danger">
 												<i class="fa fa-trash" aria-hidden="true"></i>
-												Delete
+												<span class="hidden-xs hidden-sm">
+													Delete
+												</span>
 											</button>
 										</span>
 									</p>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
-								<div class="imageSingleBook">
+								<div class="imageSingleBook hidden-xs">
 									<img src="assets/books/book7.jpg">
 								</div>
 								<div class="contentSingleBook">
@@ -285,22 +321,28 @@
 										<span>
 											<button class="btn btn-success">
 												<i class="fa fa-check" aria-hidden="true"></i> 
-												Mark sold
+												<span class="hidden-xs hidden-sm">
+													Mark sold
+												</span>
 											</button>
 											<button class="btn btn-primary">
 												<i class="fa fa-pencil" aria-hidden="true"></i>
-												Edit
+												<span class="hidden-xs hidden-sm">
+													Edit
+												</span>
 											</button>
 											<button class="btn btn-danger">
 												<i class="fa fa-trash" aria-hidden="true"></i>
-												Delete
+												<span class="hidden-xs hidden-sm">
+													Delete
+												</span>
 											</button>
 										</span>
 									</p>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
-								<div class="imageSingleBook">
+								<div class="imageSingleBook hidden-xs">
 									<img src="assets/books/book8.jpg">
 								</div>
 								<div class="contentSingleBook">
@@ -315,22 +357,28 @@
 										<span>
 											<button class="btn btn-success">
 												<i class="fa fa-check" aria-hidden="true"></i> 
-												Mark sold
+												<span class="hidden-xs hidden-sm">
+													Mark sold
+												</span>
 											</button>
 											<button class="btn btn-primary">
 												<i class="fa fa-pencil" aria-hidden="true"></i>
-												Edit
+												<span class="hidden-xs hidden-sm">
+													Edit
+												</span>
 											</button>
 											<button class="btn btn-danger">
 												<i class="fa fa-trash" aria-hidden="true"></i>
-												Delete
+												<span class="hidden-xs hidden-sm">
+													Delete
+												</span>
 											</button>
 										</span>
 									</p>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
-								<div class="imageSingleBook">
+								<div class="imageSingleBook hidden-xs">
 									<img src="assets/books/book9.jpg">
 								</div>
 								<div class="contentSingleBook">
@@ -345,15 +393,21 @@
 										<span>
 											<button class="btn btn-success">
 												<i class="fa fa-check" aria-hidden="true"></i> 
-												Mark sold
+												<span class="hidden-xs hidden-sm">
+													Mark sold
+												</span>
 											</button>
 											<button class="btn btn-primary">
 												<i class="fa fa-pencil" aria-hidden="true"></i>
-												Edit
+												<span class="hidden-xs hidden-sm">
+													Edit
+												</span>
 											</button>
 											<button class="btn btn-danger">
 												<i class="fa fa-trash" aria-hidden="true"></i>
-												Delete
+												<span class="hidden-xs hidden-sm">
+													Delete
+												</span>
 											</button>
 										</span>
 									</p>

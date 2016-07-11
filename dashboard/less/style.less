@@ -20,6 +20,16 @@
 	@defaultThemeColor: #2780E3;
 	@fontFamily:'Lato', sans-serif;
 
+	.myBooksMobileTablet{
+	}
+	.myBooksMobileTablet:visited {background-color:transparent!important;}  /* visited link */
+	.myBooksMobileTablet:hover 	 {background-color:transparent!important;}  /* mouse over link */
+	.myBooksMobileTablet:active  {background-color:transparent!important;}  /* selected link */
+		.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	    color: #555;
+	    background-color: transparent;
+	}
+
 /*  Default Mixins  */	
 
 	.transitions{
@@ -178,43 +188,38 @@
 			padding:0px;
 			.activeState{
 				height:44px;
+				min-width:100%;
+				padding:0px;
 				background-color:#1e282c;
+				margin:0px;
 				border-left:3px solid @defaultThemeColor;
 			}
-			li{
-				cursor:pointer;
-				min-height:44px;
-				padding-top:10px;
+			.tabPane{
+				color:#b8c7ce;
+				height:44px;
+				width:100%;
 				&:hover{
-					a{
-						color:#fff;
-						text-decoration:none;
-					}
-					i{
-						color:#fff;
-					}
-				}
-				.openMenu{
-					font-size: 19px;
-				    position: absolute;
-				    top: 15px;
-				    right: 9px;
-				    cursor:pointer;
-				}
-				a{
-					color: #b8c7ce;
-				    font-weight: 400;
-				    font-size: 15px;
-				    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
-				    padding-left: 15px;
-				    float: left;
+					text-decoration:none;
 				}
 				i{
 			     	color: #b8c7ce;
 				    float: left;
 				    padding-right: 0px;
 				    padding-left: 15px;
-    				padding-top: 4px;
+				    padding-top: 4px;
+    				padding-right: 10px;
+				}
+				li{
+					cursor:pointer;
+					min-height:44px;
+					padding-top:10px;
+					.openMenu{
+						font-size: 19px;
+					    position: absolute;
+					    top: 15px;
+					    right: 9px;
+					    cursor:pointer;
+					}
 				}
 			}
 		}
@@ -829,6 +834,101 @@
     	}
     }
 
+    /* settings section */
+
+    .settings{
+	    height: 400px;
+	    width: 80%;
+	    margin: 60px auto;
+	    display: table;
+	    float: none;
+    	h2{
+		    font-size: 25px;
+		    color: #282828;
+		    text-align: left;
+		    padding-top: 44px;
+		    font-weight: 500;
+    	}
+    	.itemChangeImage{
+    		height:300px;
+    		width:279px;
+    		h3{
+    			color:#696868;
+    			font-size:15px;
+    			text-align:left;
+    		}
+    		img{
+    			margin-top:20px;
+    			border-radius:4px;
+    		}
+    		label.myLabel input[type="file"] {
+			    position: fixed;
+			    top: -1000px;
+			}
+    		/***** Example custom styling *****/
+			.myLabel {
+			    border: 1px solid #AAA;
+			    border-radius: 4px;
+			    /* padding: 2px 5px; */
+			    /* margin: 2px; */
+			    background: #fff;
+			    display: inline-block;
+			    min-width: 251px;
+			    margin-top: 15px;
+			    height: 45px;
+			    color: #282828;
+			    text-align: center;
+			    padding-top: 10px;
+			    cursor:pointer;
+			}
+			span {
+			    color: #939393;
+			    font-size:15px;
+			    font-weight:500;
+			}
+    	}
+    	.itemForm{
+    		height:425px;
+    		width:620px;
+		    margin-left: 21px;
+		    form{
+		    	margin-top:60px;
+		    	button{
+	    		   	margin-top: 13px;
+				    background-color: #2780e3;
+				    color: #fff;
+				    border: none;
+				    height: 44px;
+				    width: 120px;
+		    	}
+		    }
+    	}
+    }
+
+    /* Notifications */
+
+    .notifications{
+    	height:400px;
+    	width:100%;
+    	div{
+    		margin-left: 250px;
+    		margin-top: 50px;
+    		span{
+			    font-size: 15px;
+			    font-weight: 500;
+			    padding-left: 35px;
+			    position: relative;
+			    top: 3px;
+			    color:#939393;
+    		}
+    		input{
+		        height: 20px;
+			    width: 20px;
+			    float: left;
+    		}
+    	}
+    }
+
 /* ====================================================
 
 		Media Quries for mobile and tablet devices
@@ -1037,7 +1137,7 @@
 		left:-193px;
 		z-index:999;
 	}
-	.mainListItems li a{
+	.mainListItems a li span{
 		display:none;
 	}
 	.mainListItems{
@@ -1290,7 +1390,7 @@
 	    margin: 20px auto;
 	    float: none;
 	    display: table;
-	    
+
 	}
 	.relatedItem:nth-child(2){
 		margin:20px auto;
@@ -1414,7 +1514,7 @@
 		float:right;
 	}
 
-		.mainListItems li a{
+	.mainListItems a li span{
 		display:none;
 	}
 	.mainListItems{
@@ -1720,6 +1820,7 @@
 	    margin: 0px auto;
 	    display: table;
 	    float: none;
+	    margin-bottom:20px;
 	}
 	.mainBody .itemSingleBook .imageSingleBook {
 	    height: 100px;
@@ -1764,6 +1865,9 @@
 	    float: none;
 	    margin-bottom: 10px;
 	    width:100%;
+	    float: left;
+	    width: 30%;
+	    margin-left: 8px;
 	}
 	.mainBody .itemSingleBook .contentSingleBook p{
 		float:none;
@@ -1775,6 +1879,9 @@
 	    float: none;
 	    margin-bottom: 10px;
 	    width:100%;
+	    float: left;
+	    width: 30%;
+	    margin-left: 8px;
 	}
 	.mainBody .itemSingleBook .contentSingleBook .buttonStack button.btn-danger{
 		margin: 0 auto;
@@ -1782,6 +1889,9 @@
 	    float: none;
 	    margin-bottom: 10px;
 	    width:100%;
+     	float: left;
+	    width: 30%;
+	    margin-left: 8px;
 	}
 	.mainBody .itemBookSingleAdd {
 	    height: 34px;
@@ -1890,7 +2000,7 @@
 		left:-193px;
 		z-index:999;
 	}
-	.mainListItems li a{
+	.mainListItems a li span{
 		display:none;
 	}
 	.mainListItems{
@@ -2326,6 +2436,8 @@
 	    margin: 0px auto;
 	    display: table;
 	    float: none;
+	    margin-bottom:20px;
+	    border-bottom:1px solid #ccc;
 	}
 	.mainBody .itemSingleBook .imageSingleBook {
 	    height: 100px;
@@ -2370,6 +2482,9 @@
 	    float: none;
 	    margin-bottom: 10px;
 	    width:100%;
+	    float: left;
+	    width: 27%;
+	    margin-left: 8px;
 	}
 	.mainBody .itemSingleBook .contentSingleBook p{
 		float:none;
@@ -2381,6 +2496,9 @@
 	    float: none;
 	    margin-bottom: 10px;
 	    width:100%;
+	    float: left;
+	    width: 27%;
+	    margin-left: 8px;
 	}
 	.mainBody .itemSingleBook .contentSingleBook .buttonStack button.btn-danger{
 		margin: 0 auto;
@@ -2388,6 +2506,9 @@
 	    float: none;
 	    margin-bottom: 10px;
 	    width:100%;
+	    float: left;
+	    width: 27%;
+	    margin-left: 8px;
 	}
 	.mainBody .itemBookSingleAdd {
 	    height: 34px;
@@ -2488,7 +2609,7 @@
 		left:-193px;
 		z-index:999;
 	}
-	.mainListItems li a{
+	.mainListItems a li span{
 		display:none;
 	}
 	.mainListItems{
@@ -2502,7 +2623,7 @@
 	.itemSingleEmailOptions {
 	    float: none;
 	    height: 37px!important;
-	    width: 80%;
+	    width: 100%;
 	    margin-bottom: 20px;
 	    padding: 0;
 	    margin: 6px auto;
@@ -2562,7 +2683,7 @@
 	.itemSingleUnRead {
 	    cursor: pointer;
 	    height: 46px;
-	    width: 80%;
+	    width: 100%!important;
 	    float: right;
 	    border: 1px solid #ccc;
 	    border-bottom: none;
@@ -2576,7 +2697,7 @@
 	    background-color: #fff!important;
 	    cursor: pointer;
 	    height: 46px;
-	    width: 80%;
+	    width: 100%!important;
 	    float: right;
 	    border: 1px solid #ccc;
 	    border-bottom: none;
