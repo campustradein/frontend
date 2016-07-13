@@ -50,38 +50,16 @@
 		            <li><a href="#">Sign Out</a></li>
 		          </ul>
 		        </li>
-		        <li class="hidden-md hidden-lg">
+		        <li>
 		        	<a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="myBooksMobileTablet">My Books</a>
 		        </li>
-		        <li class="hidden-md hidden-lg">
+		        <li>
 		        	<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class="myBooksMobileTablet">My Messages</a>
 		        </li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-		<aside class="asideMenu hidden-xs hidden-sm">
-			<!-- list items -->
-		 	<ul class="hamburger">
-		      	<li class="slideMenuOpen">
-					<i class="fa fa-align-justify SlideMenu" aria-hidden="true"></i>
-			  	</li>
-	      	</ul>
-			<ul class="mainListItems" role="tablist">
-				<a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="tabPane">
-					<li role="presentation" class="active activeState">
-						<i class="fa fa-book" aria-hidden="true"></i>
-						<span>My Books</span>
-					</li>
-				</a>
-				<a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class="tabPane">
-					<li role="presentation">
-						<i class="fa fa-inbox" aria-hidden="true"></i>
-						<span>My Messages</span>
-					</li>
-				</a>
-			</ul>
-		</aside>
 
 		<!-- main body -->
 		<section class="mainBody">
@@ -91,7 +69,10 @@
   					<div class="tab-content">
   						<div  role="tabpanel" class="tab-pane active" id="home"> 
 							<div class="col-lg-12 itemBookSingleAdd" data-toggle="modal" data-target="#myModal">
-								<h3>Add New Book</h3>
+								<h3> 
+									<span class="hidden-xs">Add New Book</span>
+									<i class="fa fa-plus hidden-lg hidden-md hidden-sm" aria-hidden="true"></i>
+								</h3>
 							</div>
 							<div class="clearfix"></div>
 						
@@ -100,29 +81,35 @@
 									<img src="assets/books/book1.jpg">
 								</div>
 								<div class="contentSingleBook">
-									<h3>Angular JS 2</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat.
-									</p>	
-									<p class="buttonStack">
-										<span>
-											<button class="btn btn-success">
-												<i class="fa fa-check" aria-hidden="true"></i> 
-												<span class="hidden-xs hidden-sm">Mark sold</span>
-											</button>
-											<button class="btn btn-primary">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">Edit</span>
-											</button>
-											<button class="btn btn-danger">
-												<i class="fa fa-trash" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">Delete</span>
-											</button>
-										</span>
-									</p>
+									<div class="headingMobileScreen">
+										<h3>Backbone JS</h3>
+									</div>
+									<div class="paraMobileScreen">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.
+										</p>
+									</div>
+									<div class="buttonMobileScreen">
+										<p class="buttonStack">
+											<span>
+												<button class="btn btn-success">
+													<i class="fa fa-check" aria-hidden="true"></i> 
+													<span class="hidden-xs hidden-sm">Mark sold</span>
+												</button>
+												<button class="btn btn-primary">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Edit</span>
+												</button>
+												<button class="btn btn-danger">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Delete</span>
+												</button>
+											</span>
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
@@ -130,35 +117,35 @@
 									<img src="assets/books/book2.jpg">
 								</div>
 								<div class="contentSingleBook">
-									<h3>Backbone JS</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat.
-									</p>	
-									<p class="buttonStack">
-										<span>
-											<button class="btn btn-success">
-												<i class="fa fa-check" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm"> 
-													Mark sold
-												</span>
-											</button>
-											<button class="btn btn-primary">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Edit
-												</span>
-											</button>
-											<button class="btn btn-danger">
-												<i class="fa fa-trash" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Delete
-												</span>
-											</button>
-										</span>
-									</p>
+									<div class="headingMobileScreen">
+										<h3>Backbone JS</h3>
+									</div>
+									<div class="paraMobileScreen">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.
+										</p>
+									</div>
+									<div class="buttonMobileScreen">
+										<p class="buttonStack">
+											<span>
+												<button class="btn btn-success">
+													<i class="fa fa-check" aria-hidden="true"></i> 
+													<span class="hidden-xs hidden-sm">Mark sold</span>
+												</button>
+												<button class="btn btn-primary">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Edit</span>
+												</button>
+												<button class="btn btn-danger">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Delete</span>
+												</button>
+											</span>
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
@@ -166,35 +153,35 @@
 									<img src="assets/books/book3.jpg">
 								</div>
 								<div class="contentSingleBook">
-									<h3>Backbone JS</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat.
-									</p>	
-									<p class="buttonStack">
-										<span>
-											<button class="btn btn-success">
-												<i class="fa fa-check" aria-hidden="true"></i> 
-												<span class="hidden-xs hidden-sm">
-													Mark sold
-												</span>
-											</button>
-											<button class="btn btn-primary">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Edit
-												</span>
-											</button>
-											<button class="btn btn-danger">
-												<i class="fa fa-trash" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Delete
-												</span>
-											</button>
-										</span>
-									</p>
+									<div class="headingMobileScreen">
+										<h3>Angular JS 2</h3>
+									</div>
+									<div class="paraMobileScreen">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.
+										</p>
+									</div>
+									<div class="buttonMobileScreen">
+										<p class="buttonStack">
+											<span>
+												<button class="btn btn-success">
+													<i class="fa fa-check" aria-hidden="true"></i> 
+													<span class="hidden-xs hidden-sm">Mark sold</span>
+												</button>
+												<button class="btn btn-primary">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Edit</span>
+												</button>
+												<button class="btn btn-danger">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Delete</span>
+												</button>
+											</span>
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
@@ -202,35 +189,35 @@
 									<img src="assets/books/book4.jpg">
 								</div>
 								<div class="contentSingleBook">
-									<h3>Backbone JS</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat.
-									</p>	
-									<p class="buttonStack">
-										<span>
-											<button class="btn btn-success">
-												<i class="fa fa-check" aria-hidden="true"></i> 
-												<span class="hidden-xs hidden-sm">
-													Mark sold
-												</span>
-											</button>
-											<button class="btn btn-primary">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Edit
-												</span>
-											</button>
-											<button class="btn btn-danger">
-												<i class="fa fa-trash" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Delete
-												</span>
-											</button>
-										</span>
-									</p>
+									<div class="headingMobileScreen">
+										<h3>jQuery</h3>
+									</div>
+									<div class="paraMobileScreen">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.
+										</p>
+									</div>
+									<div class="buttonMobileScreen">
+										<p class="buttonStack">
+											<span>
+												<button class="btn btn-success">
+													<i class="fa fa-check" aria-hidden="true"></i> 
+													<span class="hidden-xs hidden-sm">Mark sold</span>
+												</button>
+												<button class="btn btn-primary">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Edit</span>
+												</button>
+												<button class="btn btn-danger">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Delete</span>
+												</button>
+											</span>
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
@@ -238,35 +225,35 @@
 									<img src="assets/books/book5.jpg">
 								</div>
 								<div class="contentSingleBook">
-									<h3>Backbone JS</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat.
-									</p>	
-									<p class="buttonStack">
-										<span>
-											<button class="btn btn-success">
-												<i class="fa fa-check" aria-hidden="true"></i> 
-												<span class="hidden-xs hidden-sm">
-													Mark sold
-												</span>
-											</button>
-											<button class="btn btn-primary">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Edit
-												</span>
-											</button>
-											<button class="btn btn-danger">
-												<i class="fa fa-trash" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Delete
-												</span>
-											</button>
-										</span>
-									</p>
+									<div class="headingMobileScreen">
+										<h3>HTML 5</h3>
+									</div>
+									<div class="paraMobileScreen">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.
+										</p>
+									</div>
+									<div class="buttonMobileScreen">
+										<p class="buttonStack">
+											<span>
+												<button class="btn btn-success">
+													<i class="fa fa-check" aria-hidden="true"></i> 
+													<span class="hidden-xs hidden-sm">Mark sold</span>
+												</button>
+												<button class="btn btn-primary">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Edit</span>
+												</button>
+												<button class="btn btn-danger">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Delete</span>
+												</button>
+											</span>
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
@@ -274,35 +261,35 @@
 									<img src="assets/books/book6.jpg">
 								</div>
 								<div class="contentSingleBook">
-									<h3>Backbone JS</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat.
-									</p>	
-									<p class="buttonStack">
-										<span>
-											<button class="btn btn-success">
-												<i class="fa fa-check" aria-hidden="true"></i> 
-												<span class="hidden-xs hidden-sm">
-													Mark sold
-												</span>
-											</button>
-											<button class="btn btn-primary">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Edit
-												</span>
-											</button>
-											<button class="btn btn-danger">
-												<i class="fa fa-trash" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Delete
-												</span>
-											</button>
-										</span>
-									</p>
+									<div class="headingMobileScreen">
+										<h3>Javascript</h3>
+									</div>
+									<div class="paraMobileScreen">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.
+										</p>
+									</div>
+									<div class="buttonMobileScreen">
+										<p class="buttonStack">
+											<span>
+												<button class="btn btn-success">
+													<i class="fa fa-check" aria-hidden="true"></i> 
+													<span class="hidden-xs hidden-sm">Mark sold</span>
+												</button>
+												<button class="btn btn-primary">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Edit</span>
+												</button>
+												<button class="btn btn-danger">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Delete</span>
+												</button>
+											</span>
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
@@ -310,35 +297,35 @@
 									<img src="assets/books/book7.jpg">
 								</div>
 								<div class="contentSingleBook">
-									<h3>Backbone JS</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat.
-									</p>	
-									<p class="buttonStack">
-										<span>
-											<button class="btn btn-success">
-												<i class="fa fa-check" aria-hidden="true"></i> 
-												<span class="hidden-xs hidden-sm">
-													Mark sold
-												</span>
-											</button>
-											<button class="btn btn-primary">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Edit
-												</span>
-											</button>
-											<button class="btn btn-danger">
-												<i class="fa fa-trash" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Delete
-												</span>
-											</button>
-										</span>
-									</p>
+									<div class="headingMobileScreen">
+										<h3>Angular JS</h3>
+									</div>
+									<div class="paraMobileScreen">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.
+										</p>
+									</div>
+									<div class="buttonMobileScreen">
+										<p class="buttonStack">
+											<span>
+												<button class="btn btn-success">
+													<i class="fa fa-check" aria-hidden="true"></i> 
+													<span class="hidden-xs hidden-sm">Mark sold</span>
+												</button>
+												<button class="btn btn-primary">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Edit</span>
+												</button>
+												<button class="btn btn-danger">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Delete</span>
+												</button>
+											</span>
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
@@ -346,35 +333,35 @@
 									<img src="assets/books/book8.jpg">
 								</div>
 								<div class="contentSingleBook">
-									<h3>Backbone JS</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat.
-									</p>	
-									<p class="buttonStack">
-										<span>
-											<button class="btn btn-success">
-												<i class="fa fa-check" aria-hidden="true"></i> 
-												<span class="hidden-xs hidden-sm">
-													Mark sold
-												</span>
-											</button>
-											<button class="btn btn-primary">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Edit
-												</span>
-											</button>
-											<button class="btn btn-danger">
-												<i class="fa fa-trash" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Delete
-												</span>
-											</button>
-										</span>
-									</p>
+									<div class="headingMobileScreen">
+										<h3>Angular JS 2</h3>
+									</div>
+									<div class="paraMobileScreen">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.
+										</p>
+									</div>
+									<div class="buttonMobileScreen">
+										<p class="buttonStack">
+											<span>
+												<button class="btn btn-success">
+													<i class="fa fa-check" aria-hidden="true"></i> 
+													<span class="hidden-xs hidden-sm">Mark sold</span>
+												</button>
+												<button class="btn btn-primary">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Edit</span>
+												</button>
+												<button class="btn btn-danger">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Delete</span>
+												</button>
+											</span>
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="col-lg-12 itemSingleBook">
@@ -382,57 +369,63 @@
 									<img src="assets/books/book9.jpg">
 								</div>
 								<div class="contentSingleBook">
-									<h3>Backbone JS</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-										consequat.									
-									</p>	
-									<p class="buttonStack">
-										<span>
-											<button class="btn btn-success">
-												<i class="fa fa-check" aria-hidden="true"></i> 
-												<span class="hidden-xs hidden-sm">
-													Mark sold
-												</span>
-											</button>
-											<button class="btn btn-primary">
-												<i class="fa fa-pencil" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Edit
-												</span>
-											</button>
-											<button class="btn btn-danger">
-												<i class="fa fa-trash" aria-hidden="true"></i>
-												<span class="hidden-xs hidden-sm">
-													Delete
-												</span>
-											</button>
-										</span>
-									</p>
+									<div class="headingMobileScreen">
+										<h3>Backbone JS</h3>
+									</div>
+									<div class="paraMobileScreen">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.
+										</p>
+									</div>
+									<div class="buttonMobileScreen">
+										<p class="buttonStack">
+											<span>
+												<button class="btn btn-success">
+													<i class="fa fa-check" aria-hidden="true"></i> 
+													<span class="hidden-xs hidden-sm">Mark sold</span>
+												</button>
+												<button class="btn btn-primary">
+													<i class="fa fa-pencil" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Edit</span>
+												</button>
+												<button class="btn btn-danger">
+													<i class="fa fa-trash" aria-hidden="true"></i>
+													<span class="hidden-xs hidden-sm">Delete</span>
+												</button>
+											</span>
+										</p>
+									</div>
 								</div>
 							</div>
 							<div class="clearfix"></div>
-							<nav class="pagination">
-							  <ul class="pagination">
-							    <li>
-							      <a href="#" aria-label="Previous">
-							        <span aria-hidden="true">&laquo;</span>
-							      </a>
-							    </li>
-							    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-							    <li><a href="#">2</a></li>
-							    <li><a href="#">3</a></li>
-							    <li class="hidden-xs"><a href="#">4</a></li>
-							    <li class="hidden-xs"><a href="#">5</a></li>
-							    <li>
-							      <a href="#" aria-label="Next">
-							        <span aria-hidden="true">&raquo;</span>
-							      </a>
-							    </li>
-							  </ul>
-							</nav>
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-6 paginations">
+										<nav class="pagination">
+										  <ul class="pagination">
+										    <li>
+										      <a href="#" aria-label="Previous">
+										        <span aria-hidden="true">&laquo;</span>
+										      </a>
+										    </li>
+										    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+										    <li><a href="#">2</a></li>
+										    <li><a href="#">3</a></li>
+										    <li class="hidden-xs"><a href="#">4</a></li>
+										    <li class="hidden-xs"><a href="#">5</a></li>
+										    <li>
+										      <a href="#" aria-label="Next">
+										        <span aria-hidden="true">&raquo;</span>
+										      </a>
+										    </li>
+										  </ul>
+										</nav>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div role="tabpanel" class="tab-pane" id="profile">
 							<div class="col-lg-12 itemSingleEmailOptions">

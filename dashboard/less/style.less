@@ -134,99 +134,12 @@
 	    line-height: 24px;
 	}
 
-/* aside menu */
-	
-	.asideMenu{
-		height:100%;
-		width:240px;
-		background-color:#222d32;
-		position:fixed;
-		.transitions;
-		margin-top: 59px;
-		.user{
-			height:100px;
-			width:100%;
-			.image{
-				height:60px;
-				width:60px;
-				border-radius:100px;
-				float:left;
-				margin-top:20px;
-				margin-left:10px;
-				img{
-					height:60px;
-					width:60px;
-					border-radius:100px;
-				}
-			}
-			.contentInneruser{
-				float:left;
-				height:60px;
-			    width: 147px;
-			    margin-top: 20px;
-			    h6{
-			    	font-weight: 600;
-			    	color:#fff;
-			    	font-size:14px;
-			    	padding-left:10px;
-			    }
-			    h5{
-			    	color:#fff;
-			    	font-weight:600;
-			    	font-size:12px;
-			    	padding-left:10px;
-			    }
-			}
-		}
-		.formMainSearch{
-			position:relative;
-			top:20px;
-		}
-		.mainListItems{
-			list-style:none;
-			margin-top:50px!important;
-			padding:0px;
-			.activeState{
-				height:44px;
-				min-width:100%;
-				padding:0px;
-				background-color:#1e282c;
-				margin:0px;
-				border-left:3px solid @defaultThemeColor;
-			}
-			.tabPane{
-				color:#b8c7ce;
-				height:44px;
-				width:100%;
-				&:hover{
-					text-decoration:none;
-				}
-				i{
-			     	color: #b8c7ce;
-				    float: left;
-				    padding-right: 0px;
-				    padding-left: 15px;
-				    padding-top: 4px;
-    				padding-right: 10px;
-				}
-				li{
-					cursor:pointer;
-					min-height:44px;
-					padding-top:10px;
-					.openMenu{
-						font-size: 19px;
-					    position: absolute;
-					    top: 15px;
-					    right: 9px;
-					    cursor:pointer;
-					}
-				}
-			}
-		}
-	}
-
 	/* Main Body */
-
+	.paginations{
+		margin:0 auto;
+		display:table;
+		float:none;
+	}
 	.mainBody{
 		min-height:100%;
 		min-width:100%;
@@ -291,13 +204,12 @@
 			margin: 0 auto;
 		    display: table;
 		    margin-bottom: 30px;
-		    width: 70%;
-		    float: right;
+		    float: none;
 		    margin-top: 0px;
 		}
 		.itemSingleBook{
 	        height: 157px;
-		    width: 80%;
+		    width: 100%;
 		    background-color: #fff;
 		    float: right;
 		    margin-top: 0px;
@@ -446,9 +358,9 @@
     /* Email Tab Pane */
 
     .itemSingleEmailOptions{
-    	float:right;
+    	float:left;
     	height:37px!important;
-    	width:80%;
+    	width:100%;
     	margin-bottom:20px;
     	padding: 0px;
     	h3{
@@ -518,7 +430,7 @@
     .itemSingleUnRead{
     	cursor:pointer;
     	height:46px;
-    	width:80%;
+    	width:100%;
     	float:right;
     	border:1px solid #ccc;
     	border-bottom:none;
@@ -1093,6 +1005,7 @@
 	    float: none;
 	}
 	.mainBody .pagination{
+
 		float:none;
 	}
 	.dragdropBuilder{
@@ -3075,8 +2988,8 @@
 	/* single book item */
 
 	.mainBody .itemSingleBook {
-	    height: 157px;
-	    width: 80%;
+	    height: 123px;
+	    width: 100%;
 	    background-color: #fff;
 	    border-radius: 0px;
 	    padding: 20px;
@@ -3109,12 +3022,13 @@
 	.mainBody .itemSingleBook .contentSingleBook h3 {
 	    margin-top: 0;
 	    margin-bottom: 0;
-	    font-size: 16px;
+	    font-size: 12px;
 	    font-weight: 700;
 	    color: #232323;
 	    font-family: Lato;
 	    float: none;
 	    text-align: center;
+	    padding: 0px;
 	}
 	.mainBody .itemSingleBook .contentSingleBook .buttonStack button.btn-success {
 	    cursor: pointer;
@@ -3130,12 +3044,17 @@
 	    margin-bottom: 10px;
 	    width:100%;
 	    float: left;
-	    width: 27%;
+	    width: 16%;
 	    margin-left: 8px;
 	}
 	.mainBody .itemSingleBook .contentSingleBook p{
-		float:none;
-		text-align:center;
+		float: none;
+		    font-size: 9px;
+		    text-align: center;
+		    padding: 0px;
+		    margin: 0px;
+		    position: relative;
+		    bottom: 4px;
 	}
 	.mainBody .itemSingleBook .contentSingleBook .buttonStack button.btn-primary{
 		margin: 0 auto;
@@ -3144,7 +3063,7 @@
 	    margin-bottom: 10px;
 	    width:100%;
 	    float: left;
-	    width: 27%;
+	    width: 16%;
 	    margin-left: 8px;
 	}
 	.mainBody .itemSingleBook .contentSingleBook .buttonStack button.btn-danger{
@@ -3154,12 +3073,12 @@
 	    margin-bottom: 10px;
 	    width:100%;
 	    float: left;
-	    width: 27%;
+	    width: 16%;
 	    margin-left: 8px;
 	}
 	.mainBody .itemBookSingleAdd {
 	    height: 34px;
-	    width: 80%;
+	    width: 14%;
 	    float: none;
 	    border-radius: 4px;
 	    cursor: pointer;
@@ -3683,5 +3602,37 @@
 	
 	.relatedItem:nth-child(3){
 		margin:20px auto;
+	}
+
+	.headingMobileScreen{
+		width: 70px;
+	    float: left;
+	    padding: 0px;
+	    
+	}
+	.paraMobileScreen{
+	    float: left;
+	    width: 176px;
+	    height: 19px;
+	    overflow: hidden;
+	    p{
+    	    
+	    }
+	}
+	.buttonMobileScreen{
+		margin-top:38px;
+	}
+	.navbar-toggle {
+	    float: left;
+	    margin-left:20px;
+	}
+	.navbar-default .navbar-brand {
+	    color: #2780e3;
+	    font-size: 25px;
+	    font-family: Roboto;
+	    font-weight: 600;
+	    padding-top: 16px;
+	    cursor: pointer;
+	    float: right;
 	}
 }
